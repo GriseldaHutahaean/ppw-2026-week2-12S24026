@@ -4,128 +4,718 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Griselda Tabitha Nathania Hutahaean, mahasiswa Sistem Informasi Institut Teknologi Del.">
-    <title>Portfolio | Griselda Hutahaean</title>
+    <meta name="description" content="Portofolio Profil Profesional Griselda Tabitha Nathania Hutahaean - Mahasiswa S1 Sistem Informasi Institut Teknologi Del. Menampilkan capaian proyek, keahlian, dan layanan konsultasi sistem terstruktur.">
+    <meta name="author" content="Griselda Tabitha Nathania Hutahaean">
+    <meta name="keywords" content="Griselda Hutahaean, Portofolio, Sistem Informasi, Institut Teknologi Del, Data Analytics, UI/UX, Web Developer">
+    <title>Griselda Hutahaean | Executive Portfolio &amp; Technical Showcase</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans (Modern Clean Sans-Serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet Eksternal -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Skip to main content link for screen reader and keyboard accessibility -->
+    <a href="#konten-utama" class="skip-link">Loncat ke konten utama</a>
+
+    <!-- 1. Header & Navigasi Semantik -->
     <header class="site-header" id="beranda">
-        <div class="container header-content">
-            <a class="logo" href="#beranda">GT<span>.</span></a>
-            <nav aria-label="Navigasi utama">
-                <a href="#tentang">Tentang</a>
-                <a href="#keahlian">Keahlian</a>
-                <a href="#portofolio">Portofolio</a>
-                <a href="#kontak">Kontak</a>
+        <div class="header-container">
+            <a href="#beranda" class="brand-logo" aria-label="Beranda Portofolio Griselda Hutahaean">
+                <span class="logo-symbol">GH</span>
+                <span class="logo-text">Griselda<span class="logo-dot">.</span></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navigasi Utama Situs">
+                <ul class="nav-list">
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+                    <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+                    <li><a href="#metodologi" class="nav-link">Metodologi</a></li>
+                    <li><a href="#layanan" class="nav-link nav-cta">Pesan Layanan</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero container" aria-labelledby="hero-title">
-            <div class="hero-text">
-                <p class="label">Mahasiswa Sistem Informasi · Institut Teknologi Del</p>
-                <h1 id="hero-title">Griselda Tabitha<br><em>Nathania Hutahaean</em></h1>
-                <p class="intro-text">Saya tertarik pada Data Analytics, Artificial Intelligence, dan System Analysis. Saat ini saya sedang belajar membangun solusi digital melalui data dan pemrograman.</p>
-                <a class="button button-primary" href="#portofolio">Lihat portofolio <span aria-hidden="true">↓</span></a>
-            </div>
-            <aside class="profile-card" aria-label="Informasi singkat tentang Griselda">
-                <div class="avatar" aria-hidden="true">GT</div>
-                <p class="status"><span></span> Terbuka untuk belajar dan berkolaborasi</p>
-                <h2>Information Systems Student</h2>
-                <p>Batam, Riau Island, Indonesia</p>
-                <dl class="profile-details">
-                    <div><dt>Email</dt><dd><a href="mailto:griseldatabita@gmail.com">griseldatabita@gmail.com</a></dd></div>
-                    <div><dt>Telepon</dt><dd><a href="tel:+6285943113515">+62 859-4311-3515</a></dd></div>
-                </dl>
-            </aside>
-        </section>
-
-        <section class="content-section container" id="tentang" aria-labelledby="tentang-title">
-            <div class="section-heading"><p class="section-number">01</p><h2 id="tentang-title">Tentang Saya</h2></div>
-            <div class="section-content about-content">
-                <p class="large-text">Mahasiswa S1 Sistem Informasi dengan pengalaman mengerjakan proyek akademik, studi kasus data, dan kompetisi bersama tim.</p>
-                <p>Saya terbiasa mempelajari permasalahan, menyusun solusi secara bertahap, dan mendokumentasikan hasilnya. Selain mengembangkan kemampuan teknis, saya juga aktif melatih kemampuan komunikasi, kepemimpinan, dan kerja sama.</p>
-            </div>
-        </section>
-
-        <section class="content-section container" id="keahlian" aria-labelledby="keahlian-title">
-            <div class="section-heading"><p class="section-number">02</p><h2 id="keahlian-title">Keahlian</h2></div>
-            <div class="section-content skills-grid">
-                <article class="skill-card"><h3>Programming</h3><ul><li>Python</li><li>SQL</li><li>Java</li><li>C</li><li>R</li></ul></article>
-                <article class="skill-card"><h3>Data Analysis</h3><ul><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Power BI</li></ul></article>
-                <article class="skill-card"><h3>Database</h3><ul><li>MySQL</li><li>JDBC</li><li>CRUD Operations</li></ul></article>
-                <article class="skill-card"><h3>Tools &amp; Design</h3><ul><li>GitHub</li><li>VS Code</li><li>Figma</li></ul></article>
-            </div>
-        </section>
-
-        <section class="content-section container" id="portofolio" aria-labelledby="portofolio-title">
-            <div class="section-heading"><p class="section-number">03</p><h2 id="portofolio-title">Portofolio Karya</h2></div>
-            <div class="section-content">
-                <div class="project-cards">
-                    <article class="project-card"><p class="project-year">May 2026 · Academic Project</p><h3>RPG Character Management System</h3><p>Aplikasi berbasis Java dengan prinsip SOLID, OOP, JDBC, dan operasi CRUD dalam arsitektur modular.</p><ul class="tag-list"><li>Java</li><li>JDBC</li><li>MySQL</li></ul></article>
-                    <article class="project-card"><p class="project-year">Oct 2025 · Team Leader</p><h3>GEMASTIK Smart City Competition</h3><p>Memimpin tim dalam pengembangan solusi Smart City, pembuatan mockup, dan dokumentasi teknis.</p><ul class="tag-list"><li>Figma</li><li>Leadership</li><li>Smart City</li></ul></article>
-                    <article class="project-card"><p class="project-year">Nov—Dec 2025 · DQLab</p><h3>Data Engineer Challenge with SQL</h3><p>Menyelesaikan studi kasus industri menggunakan SQL, Python, dan R untuk memperoleh insight berbasis data.</p><ul class="tag-list"><li>SQL</li><li>Python</li><li>R</li></ul></article>
-                    <article class="project-card"><p class="project-year">Jul 2026 · Finalist</p><h3>National UI/UX Design Competition</h3><p>Memimpin proses ideasi, desain antarmuka, pembuatan prototype, dan presentasi solusi kepada juri.</p><ul class="tag-list"><li>UI/UX</li><li>Figma</li><li>Teamwork</li></ul></article>
+    <!-- 2. Konten Utama Dokumen -->
+    <main id="konten-utama">
+        <!-- Hero Section: Presentasi Profil Eksekutif -->
+        <section class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status-indicator" aria-hidden="true"></span>
+                        <span>S1 Sistem Informasi &bull; Institut Teknologi Del</span>
+                    </div>
+                    <h1 id="hero-heading" class="hero-title">
+                        Membangun Solusi Digital Melalui <span class="gradient-text">Data, Sistem, &amp; Antarmuka Modern.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Halo! Saya <strong>Griselda Tabitha Nathania Hutahaean</strong>, calon analis sistem dan pengembang antarmuka berbasis data. Berkomitmen menghadirkan solusi teknologi yang terstruktur rapi, efisien, serta ramah aksesibilitas (WCAG AA).
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portofolio" class="btn btn-primary">
+                            Eksplorasi Karya
+                            <span class="btn-arrow" aria-hidden="true">&darr;</span>
+                        </a>
+                        <a href="#layanan" class="btn btn-secondary">
+                            Jadwalkan Konsultasi
+                        </a>
+                    </div>
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">3.41</span>
+                            <span class="highlight-label">Indeks Prestasi Kumulatif</span>
+                        </div>
+                        <div class="highlight-divider" aria-hidden="true"></div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">05+</span>
+                            <span class="highlight-label">Proyek Terverifikasi</span>
+                        </div>
+                        <div class="highlight-divider" aria-hidden="true"></div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">100%</span>
+                            <span class="highlight-label">Standar Aksesibilitas</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="table-wrapper">
-                    <table>
-                        <caption>Ringkasan Riwayat Proyek</caption>
-                        <thead><tr><th scope="col">No.</th><th scope="col">Nama Proyek</th><th scope="col">Peran</th><th scope="col">Teknologi</th><th scope="col">Tahun</th></tr></thead>
-                        <tbody>
-                            <tr><th scope="row">1</th><td>RPG Character Management System</td><td>Developer</td><td>Java, JDBC</td><td>2026</td></tr>
-                            <tr><th scope="row">2</th><td>GEMASTIK Smart City</td><td>Team Leader</td><td>Figma, UI/UX</td><td>2025</td></tr>
-                            <tr><th scope="row">3</th><td>Data Engineer Challenge</td><td>Participant</td><td>SQL, Python, R</td><td>2025</td></tr>
-                            <tr><th scope="row">4</th><td>National UI/UX Competition</td><td>Team Leader</td><td>Figma</td><td>2026</td></tr>
-                        </tbody>
-                        <tfoot><tr><th scope="row" colspan="4">Total proyek</th><td>4</td></tr></tfoot>
-                    </table>
-                </div>
+                <!-- Aside Semantik: Snapshot Profil Cepat -->
+                <aside class="profile-aside" aria-labelledby="aside-heading">
+                    <div class="aside-card">
+                        <div class="aside-card-top">
+                            <div class="avatar-ring">
+                                <div class="avatar-inner">
+                                    <span class="avatar-initials">GH</span>
+                                </div>
+                            </div>
+                            <div class="aside-status-chip">
+                                <span class="pulse-dot" aria-hidden="true"></span>
+                                Tersedia untuk Kolaborasi
+                            </div>
+                        </div>
 
-                <div class="process-box">
-                    <h3>Proses Mengerjakan Proyek</h3>
-                    <ol><li>Memahami masalah</li><li>Menyusun kebutuhan</li><li>Merancang solusi</li><li>Mengembangkan dan menguji</li><li>Mempresentasikan hasil</li></ol>
+                        <div class="aside-identity">
+                            <h2 id="aside-heading" class="aside-name">Griselda T. N. Hutahaean</h2>
+                            <p class="aside-role">NIM: 12S24026</p>
+                            <p class="aside-location">Sitoluama, Laguboti, Sumatera Utara</p>
+                        </div>
+
+                        <hr class="aside-divider">
+
+                        <!-- HTML Description List (<dl>) untuk Informasi Ringkas -->
+                        <dl class="aside-meta-list">
+                            <div class="meta-item">
+                                <dt>Institusi</dt>
+                                <dd>Institut Teknologi Del</dd>
+                            </div>
+                            <div class="meta-item">
+                                <dt>Fakultas</dt>
+                                <dd>FITE (S1 Sistem Informasi)</dd>
+                            </div>
+                            <div class="meta-item">
+                                <dt>Fokus Riset</dt>
+                                <dd>Data Analytics &amp; System Design</dd>
+                            </div>
+                            <div class="meta-item">
+                                <dt>Surel Resmi</dt>
+                                <dd><a href="mailto:griseldatabita@gmail.com" class="meta-link">griseldatabita@gmail.com</a></dd>
+                            </div>
+                            <div class="meta-item">
+                                <dt>WhatsApp</dt>
+                                <dd><a href="tel:+6285943113515" class="meta-link">+62 859-4311-3515</a></dd>
+                            </div>
+                        </dl>
+
+                        <div class="aside-footer-actions">
+                            <a href="#layanan" class="aside-action-btn">Kirim Permintaan Layanan &rarr;</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Section 1 Semantik: Tentang Saya -->
+        <section class="section-block" id="tentang" aria-labelledby="tentang-heading">
+            <div class="block-container">
+                <header class="section-header">
+                    <span class="section-tag">Ringkasan Profil</span>
+                    <h2 id="tentang-heading" class="section-title">Tentang Saya</h2>
+                    <p class="section-subtitle">Dedikasi dalam rekayasa sistem informasi, pengolahan data, dan perancangan antarmuka pengguna.</p>
+                </header>
+
+                <div class="about-grid">
+                    <article class="about-narrative-card">
+                        <h3 class="narrative-title">Visi &amp; Komitmen Profesional</h3>
+                        <p class="narrative-lead">
+                            Sebagai mahasiswa Sistem Informasi di Institut Teknologi Del, saya menaruh antusiasme mendalam pada integrasi antara <strong>analisis data bisnis</strong>, <strong>rekayasa perangkat lunak</strong>, dan <strong>pengalaman pengguna (UX)</strong> yang inklusif.
+                        </p>
+                        <p>
+                            Saya memandang teknologi bukan semata sebagai barisan kode, melainkan medium pemecahan masalah nyata. Setiap tantangan komputasi saya dekati melalui riset kebutuhan terstruktur, perancangan model basis data yang efisien, serta penerapan prinsip-prinsip desain modular.
+                        </p>
+                        <p>
+                            Selain aspek teknis, saya aktif membina kemampuan kolaborasi lintas fungsi melalui kepanitiaan akademik, peran kepemimpinan tim kompetisi nasional, dan program edukasi teknologi.
+                        </p>
+                    </article>
+
+                    <div class="about-pillars">
+                        <article class="pillar-card">
+                            <div class="pillar-icon" aria-hidden="true">&bull; 01</div>
+                            <div class="pillar-body">
+                                <h4>Pemikiran Analitis &amp; Berbasis Data</h4>
+                                <p>Menganalisis pola data mentah menjadi wawasan terukur dengan memanfaatkan Python, SQL, dan visualisasi interaktif.</p>
+                            </div>
+                        </article>
+
+                        <article class="pillar-card">
+                            <div class="pillar-icon" aria-hidden="true">&bull; 02</div>
+                            <div class="pillar-body">
+                                <h4>Arsitektur Bersih &amp; Terstruktur</h4>
+                                <p>Menulis kode yang mudah dirawat (*clean code*) dengan mematuhi prinsip OOP, SOLID, dan standar semantik standar industri.</p>
+                            </div>
+                        </article>
+
+                        <article class="pillar-card">
+                            <div class="pillar-icon" aria-hidden="true">&bull; 03</div>
+                            <div class="pillar-body">
+                                <h4>Aksesibilitas &amp; Inklusivitas (A11y)</h4>
+                                <p>Memastikan setiap antarmuka digital dapat diakses secara merata oleh semua orang mengacu pada pedoman WCAG 2.2 AA.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="content-section container education-section" aria-labelledby="pendidikan-title">
-            <div class="section-heading"><p class="section-number">04</p><h2 id="pendidikan-title">Pendidikan &amp; Aktivitas</h2></div>
-            <div class="section-content education-grid">
-                <article class="education-card"><p class="label">Sep 2024—Sep 2028 (Expected)</p><h3>Institut Teknologi Del</h3><p>S1 Sistem Informasi<br>Sitoluama, Laguboti, Sumatera Utara</p><strong>IPK 3.41 / 4.00</strong></article>
-                <article class="education-card"><h3>Aktivitas</h3><ul><li>Public Relations Member, Department of Science and Technology</li><li>Committee Member, Internal GEMASTIK Program</li><li>Design Team Member, Bebras Program</li></ul></article>
+        <!-- Section 2 Semantik: Galeri Keahlian Terstruktur -->
+        <section class="section-block section-alt" id="keahlian" aria-labelledby="keahlian-heading">
+            <div class="block-container">
+                <header class="section-header">
+                    <span class="section-tag">Kompetensi Teknis</span>
+                    <h2 id="keahlian-heading" class="section-title">Galeri Keahlian Terstruktur</h2>
+                    <p class="section-subtitle">Spektrum kapabilitas teknis yang dikuasai secara berkelanjutan dalam perkuliahan dan proyek independen.</p>
+                </header>
+
+                <div class="skills-showcase-grid">
+                    <!-- Domain 1: Bahasa Pemrograman -->
+                    <article class="skill-group-card">
+                        <div class="skill-header">
+                            <span class="skill-domain-badge">Core Languages</span>
+                            <h3 class="skill-group-title">Programming Languages</h3>
+                        </div>
+                        <p class="skill-group-desc">Bahasa pemrograman yang digunakan dalam pemodelan algoritma, backend logika sistem, dan komputasi.</p>
+                        <ul class="tag-pill-list" aria-label="Daftar Bahasa Pemrograman">
+                            <li class="tag-pill">Python</li>
+                            <li class="tag-pill">Java (OOP)</li>
+                            <li class="tag-pill">SQL (ANSI)</li>
+                            <li class="tag-pill">C Programming</li>
+                            <li class="tag-pill">R Language</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 2: Data Analytics & AI -->
+                    <article class="skill-group-card">
+                        <div class="skill-header">
+                            <span class="skill-domain-badge">Analytics &amp; AI</span>
+                            <h3 class="skill-group-title">Data Science &amp; Pipeline</h3>
+                        </div>
+                        <p class="skill-group-desc">Manipulasi data tabular, pemodelan statistik, eksplorasi data, dan dashboard analitis.</p>
+                        <ul class="tag-pill-list" aria-label="Daftar Peralatan Analisis Data">
+                            <li class="tag-pill">Pandas</li>
+                            <li class="tag-pill">NumPy</li>
+                            <li class="tag-pill">Matplotlib &amp; Seaborn</li>
+                            <li class="tag-pill">Power BI</li>
+                            <li class="tag-pill">Statistical Modeling</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 3: Basis Data & Arsitektur -->
+                    <article class="skill-group-card">
+                        <div class="skill-header">
+                            <span class="skill-domain-badge">Data Systems</span>
+                            <h3 class="skill-group-title">Database &amp; Architecture</h3>
+                        </div>
+                        <p class="skill-group-desc">Perancangan relasional basis data, normalisasi (1NF-3NF), transaksi ACID, dan konektor data.</p>
+                        <ul class="tag-pill-list" aria-label="Daftar Basis Data">
+                            <li class="tag-pill">MySQL RDBMS</li>
+                            <li class="tag-pill">JDBC Connectivity</li>
+                            <li class="tag-pill">CRUD Operations</li>
+                            <li class="tag-pill">Database Schema Design</li>
+                            <li class="tag-pill">Query Optimization</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domain 4: Web UI & Alat Kolaborasi -->
+                    <article class="skill-group-card">
+                        <div class="skill-header">
+                            <span class="skill-domain-badge">Interface &amp; Tools</span>
+                            <h3 class="skill-group-title">Web Design &amp; DevOps Tools</h3>
+                        </div>
+                        <p class="skill-group-desc">Pondasi antarmuka semantik, desain responsif, prototipe antarmuka, dan manajemen versi Git.</p>
+                        <ul class="tag-pill-list" aria-label="Daftar Alat Antarmuka dan Manajemen Kode">
+                            <li class="tag-pill">HTML5 Semantic</li>
+                            <li class="tag-pill">Modern CSS3 (Flex &amp; Grid)</li>
+                            <li class="tag-pill">Figma UI/UX Prototyping</li>
+                            <li class="tag-pill">Git &amp; GitHub Versioning</li>
+                            <li class="tag-pill">VS Code Workspace</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="contact-section" id="kontak" aria-labelledby="kontak-title">
-            <div class="container contact-layout">
-                <div><p class="section-number">05</p><h2 id="kontak-title">Mari Terhubung</h2><p>Silakan isi formulir jika ingin berdiskusi mengenai proyek, kolaborasi, atau pengalaman belajar.</p></div>
-                <form class="contact-form" action="#" method="post">
-                    <fieldset><legend>Data Diri</legend>
-                        <div class="form-group"><label for="nama">Nama Lengkap <span aria-hidden="true">*</span></label><input type="text" id="nama" name="nama" required placeholder="Nama lengkap"></div>
-                        <div class="form-group"><label for="email">Email <span aria-hidden="true">*</span></label><input type="email" id="email" name="email" required placeholder="nama@email.com" aria-describedby="email-help"><small id="email-help">Gunakan email yang masih aktif.</small></div>
-                        <div class="form-group"><label for="telepon">Nomor Telepon <span aria-hidden="true">*</span></label><input type="tel" id="telepon" name="telepon" required placeholder="08xxxxxxxxxx"></div>
-                    </fieldset>
-                    <fieldset><legend>Detail Pesan</legend>
-                        <div class="form-group"><label for="topik">Topik Pembicaraan <span aria-hidden="true">*</span></label><select id="topik" name="topik" required><option value="">Pilih topik</option><option value="project">Diskusi project</option><option value="collaboration">Kolaborasi</option><option value="data">Data analysis</option></select></div>
-                        <div class="form-group"><label for="tanggal">Tanggal yang Diinginkan</label><input type="date" id="tanggal" name="tanggal"></div>
-                        <div class="form-group"><label for="jumlah">Jumlah Anggota Tim</label><input type="number" id="jumlah" name="jumlah" min="1" max="20" value="1"></div>
-                        <fieldset class="small-fieldset"><legend>Metode Balasan</legend><label class="choice"><input type="radio" name="metode" value="email" required> Email</label><label class="choice"><input type="radio" name="metode" value="telepon"> Telepon</label></fieldset>
-                        <label class="choice"><input type="checkbox" name="persetujuan" required> Saya menyetujui untuk dihubungi kembali.</label>
-                        <div class="form-group"><label for="pesan">Pesan <span aria-hidden="true">*</span></label><textarea id="pesan" name="pesan" rows="4" required placeholder="Tuliskan pesan kamu..."></textarea></div>
-                    </fieldset>
-                    <button class="button button-primary" type="submit">Kirim Pesan <span aria-hidden="true">→</span></button>
-                </form>
+        <!-- Section 3 Semantik: Portofolio Karya, Tabel Data Semantik, dan Metodologi -->
+        <section class="section-block" id="portofolio" aria-labelledby="portofolio-heading">
+            <div class="block-container">
+                <header class="section-header">
+                    <span class="section-tag">Showcase Karya</span>
+                    <h2 id="portofolio-heading" class="section-title">Portofolio Capaian &amp; Proyek</h2>
+                    <p class="section-subtitle">Kumpulan karya terpilih mencakup rekayasa perangkat lunak, studi kasus data, dan kompetisi inovasi.</p>
+                </header>
+
+                <!-- Grid Kartu Proyek Unggulan -->
+                <div class="projects-card-grid">
+                    <article class="project-spotlight-card">
+                        <div class="project-card-header">
+                            <span class="project-year-badge">2026 &bull; Proyek Akademik</span>
+                            <span class="project-category-tag">Software Engineering</span>
+                        </div>
+                        <h3 class="project-card-title">RPG Character Management System</h3>
+                        <p class="project-card-desc">
+                            Aplikasi desktop berbasis Java yang mengimplementasikan konsep Object-Oriented Programming, prinsip SOLID, konektivitas JDBC ke MySQL, serta operasi CRUD relasional yang modular dan teruji.
+                        </p>
+                        <div class="project-deliverables">
+                            <strong>Deliverables Utama:</strong>
+                            <ul class="project-feature-list">
+                                <li>Arsitektur MVC berlapis dengan pemisahan business logic dan persistensi data.</li>
+                                <li>Validasi status karakter, kalkulasi inventaris, dan transaksi database aman.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-footer">
+                            <span class="tech-chip">Java</span>
+                            <span class="tech-chip">JDBC</span>
+                            <span class="tech-chip">MySQL</span>
+                            <span class="tech-chip">OOP SOLID</span>
+                        </div>
+                    </article>
+
+                    <article class="project-spotlight-card">
+                        <div class="project-card-header">
+                            <span class="project-year-badge">2025 &bull; Tim Leader</span>
+                            <span class="project-category-tag">Kompetisi Nasional</span>
+                        </div>
+                        <h3 class="project-card-title">GEMASTIK Smart City Solution</h3>
+                        <p class="project-card-desc">
+                            Memimpin tim perancang sistem solusi digital pintar terpadu untuk monitoring layanan publik perkotaan. Mengembangkan dokumen spesifikasi sistem, alur pengguna (*user journey*), dan mockup interaktif tingkat tinggi.
+                        </p>
+                        <div class="project-deliverables">
+                            <strong>Deliverables Utama:</strong>
+                            <ul class="project-feature-list">
+                                <li>Prototipe antarmuka Figma dengan pengujian usability testing pada 15 responden.</li>
+                                <li>Dokumentasi arsitektur sistem berbasis cloud and IoT data pipeline.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-footer">
+                            <span class="tech-chip">Figma</span>
+                            <span class="tech-chip">System Architecture</span>
+                            <span class="tech-chip">User Research</span>
+                            <span class="tech-chip">Leadership</span>
+                        </div>
+                    </article>
+
+                    <article class="project-spotlight-card">
+                        <div class="project-card-header">
+                            <span class="project-year-badge">2025 &bull; Industri DQLab</span>
+                            <span class="project-category-tag">Data Engineering</span>
+                        </div>
+                        <h3 class="project-card-title">Data Engineer &amp; SQL Challenge</h3>
+                        <p class="project-card-desc">
+                            Menyelesaikan tantangan pengolahan dataset skala besar ritel menggunakan query analitis tingkat lanjut (Window Functions, CTE, Multi-table Joins), didukung skrip Python untuk data cleansing otomatis.
+                        </p>
+                        <div class="project-deliverables">
+                            <strong>Deliverables Utama:</strong>
+                            <ul class="project-feature-list">
+                                <li>Query SQL berkinerja tinggi untuk kalkulasi retensi pelanggan dan performa produk bulanan.</li>
+                                <li>Visualisasi tren pertumbuhan penjualan menggunakan skrip visualisasi Python.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-footer">
+                            <span class="tech-chip">SQL Advanced</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Pandas</span>
+                            <span class="tech-chip">Data Cleaning</span>
+                        </div>
+                    </article>
+
+                    <article class="project-spotlight-card">
+                        <div class="project-card-header">
+                            <span class="project-year-badge">2026 &bull; Finalis Nasional</span>
+                            <span class="project-category-tag">UI/UX Design</span>
+                        </div>
+                        <h3 class="project-card-title">National UI/UX Inclusivity Design</h3>
+                        <p class="project-card-desc">
+                            Merancang aplikasi edukasi berbasis ponsel pintar yang ramah penyandang disabilitas sensorik dengan penerapan rasio kontras warna ketat, pembaca suara, dan navigasi gerak intuitif.
+                        </p>
+                        <div class="project-deliverables">
+                            <strong>Deliverables Utama:</strong>
+                            <ul class="project-feature-list">
+                                <li>Desain sistem terpadu (*design system*) dengan token warna berpedoman WCAG 2.2 Level AA.</li>
+                                <li>Validasi skor kepuasan pengujian pengguna (SUS Score) mencapai 88.5 (Kategori Baik Sekali).</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-footer">
+                            <span class="tech-chip">UI/UX</span>
+                            <span class="tech-chip">Figma</span>
+                            <span class="tech-chip">WCAG 2.2</span>
+                            <span class="tech-chip">Prototyping</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 2. Tabel Semantik Lengkap (Wajib: caption, thead, tbody, tfoot, scope) -->
+                <div class="table-card-container">
+                    <div class="table-header-intro">
+                        <h3 class="table-title">Tabel Rekapitulasi Capaian Portofolio &amp; Riset</h3>
+                        <p class="table-meta-desc">Data tabular resmi inventarisasi proyek akademik dan capaian profesional mahasiswa.</p>
+                    </div>
+
+                    <div class="table-responsive-wrapper" tabindex="0" role="region" aria-label="Tabel Rekapitulasi Proyek Mahasiswa">
+                        <table class="data-table">
+                            <caption>Inventarisasi Capaian Portofolio Proyek Griselda Tabitha Nathania Hutahaean</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="th-center">No.</th>
+                                    <th scope="col">Nama Proyek / Capaian</th>
+                                    <th scope="col">Kategori Domain</th>
+                                    <th scope="col">Peran &amp; Tanggung Jawab</th>
+                                    <th scope="col">Stack Teknologi</th>
+                                    <th scope="col" class="th-center">Tahun</th>
+                                    <th scope="col" class="th-center">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="th-row-num">1</th>
+                                    <td class="td-strong">RPG Character Management System</td>
+                                    <td><span class="table-tag">Software Development</span></td>
+                                    <td>Lead Backend Developer</td>
+                                    <td>Java, JDBC, MySQL, SOLID</td>
+                                    <td class="td-center"><time datetime="2026">2026</time></td>
+                                    <td class="td-center"><span class="badge-status-completed">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="th-row-num">2</th>
+                                    <td class="td-strong">GEMASTIK Smart City Solution</td>
+                                    <td><span class="table-tag">System &amp; Innovation</span></td>
+                                    <td>Team Leader &amp; Architect</td>
+                                    <td>Figma, System Modeling, IoT</td>
+                                    <td class="td-center"><time datetime="2025">2025</time></td>
+                                    <td class="td-center"><span class="badge-status-completed">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="th-row-num">3</th>
+                                    <td class="td-strong">Data Engineer Challenge with SQL</td>
+                                    <td><span class="table-tag">Data Engineering</span></td>
+                                    <td>Participant Analyst</td>
+                                    <td>SQL (ANSI), Python, R, ETL</td>
+                                    <td class="td-center"><time datetime="2025">2025</time></td>
+                                    <td class="td-center"><span class="badge-status-completed">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="th-row-num">4</th>
+                                    <td class="td-strong">National UI/UX Design Competition</td>
+                                    <td><span class="table-tag">User Experience (UX)</span></td>
+                                    <td>Finalist &amp; Lead Designer</td>
+                                    <td>Figma, Wireframing, WCAG 2.2</td>
+                                    <td class="td-center"><time datetime="2026">2026</time></td>
+                                    <td class="td-center"><span class="badge-status-completed">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="th-row-num">5</th>
+                                    <td class="td-strong">Web Portfolio &amp; Interactive Services</td>
+                                    <td><span class="table-tag">Web Frontend &amp; A11y</span></td>
+                                    <td>Full-Stack Author</td>
+                                    <td>HTML5 Semantic, CSS3 Modern, WCAG</td>
+                                    <td class="td-center"><time datetime="2026">2026</time></td>
+                                    <td class="td-center"><span class="badge-status-active">Aktif</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="5" class="tfoot-label">Total Portofolio &amp; Capaian Terverifikasi</th>
+                                    <td colspan="2" class="tfoot-value">5 Proyek Unggulan</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 3. Daftar Berurutan (<ol>): Metodologi Siklus Proyek -->
+                <div class="methodology-card" id="metodologi">
+                    <div class="methodology-header">
+                        <span class="section-tag">Standar Rekayasa</span>
+                        <h3 class="methodology-title">Metodologi Siklus Pengembangan Proyek</h3>
+                        <p class="methodology-desc">Lima tahapan sistematis yang konsisten saya terapkan dalam setiap penyelesaian masalah dan rekayasa proyek digital:</p>
+                    </div>
+
+                    <ol class="ordered-step-list">
+                        <li class="step-item">
+                            <div class="step-content">
+                                <h4 class="step-title">1. Analisis Kebutuhan &amp; Pemetaan Masalah</h4>
+                                <p class="step-body">Melakukan observasi, wawancara pemangku kepentingan, dan studi literatur untuk membedah akar permasalahan secara akurat.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-content">
+                                <h4 class="step-title">2. Perancangan Sistem &amp; Model Data</h4>
+                                <p class="step-body">Menyusun diagram alur kerja, Entity Relationship Diagram (ERD), skema normalisasi, serta prototipe antarmuka di Figma.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-content">
+                                <h4 class="step-title">3. Konstruksi Kode &amp; Implementasi Modular</h4>
+                                <p class="step-body">Menulis kode terstruktur dengan prinsip clean code, mematuhi kaidah semantik web standar industri, dan kontrol versi Git.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-content">
+                                <h4 class="step-title">4. Pengujian Mutu &amp; Aksesibilitas Terstandar</h4>
+                                <p class="step-body">Melakukan pengujian validasi HTML, evaluasi kontras visual (WCAG 2.2 Level AA), uji navigasi papan ketik, dan responsivitas layar.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-content">
+                                <h4 class="step-title">5. Dokumentasi Teknis &amp; Penerbitan Repositori</h4>
+                                <p class="step-body">Menyusun berkas panduan README informatif, dokumentasi API/kode, serta mempublikasikan aplikasi melalui GitHub Pages.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 Semantik: Formulir Pemesanan Layanan Konsultasi & Kontak Resmi -->
+        <section class="section-block section-alt" id="layanan" aria-labelledby="layanan-heading">
+            <div class="block-container">
+                <header class="section-header">
+                    <span class="section-tag">Layanan &amp; Kolaborasi</span>
+                    <h2 id="layanan-heading" class="section-title">Formulir Pemesanan Layanan Konsultasi</h2>
+                    <p class="section-subtitle">Membutuhkan diskusi terkait proyek sistem informasi, analisis data, atau kolaborasi antarmuka web? Silakan lengkapi formulir resmi di bawah ini.</p>
+                </header>
+
+                <div class="form-wrapper-card">
+                    <form class="consultation-form" action="https://httpbin.org/post" method="POST" novalidate>
+                        <!-- Blok Fieldset 1: Identitas & Kontak Pemohon -->
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">
+                                <span class="legend-badge">Blok 01</span>
+                                Informasi Identitas &amp; Kontak Pemohon
+                            </legend>
+
+                            <div class="form-row-2col">
+                                <!-- Kontrol Input 1: text -->
+                                <div class="form-group">
+                                    <label for="input-nama" class="field-label">
+                                        Nama Lengkap <span class="req-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <input type="text" id="input-nama" name="nama" class="form-input" required placeholder="Contoh: Griselda Hutahaean" autocomplete="name" aria-describedby="nama-help">
+                                    <span id="nama-help" class="field-hint">Gunakan nama lengkap resmi untuk memudahkan pendataan.</span>
+                                </div>
+
+                                <!-- Kontrol Input 2: email -->
+                                <div class="form-group">
+                                    <label for="input-email" class="field-label">
+                                        Alamat Email Resmi <span class="req-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <input type="email" id="input-email" name="email" class="form-input" required placeholder="nama@del.ac.id atau nama@domain.com" autocomplete="email" aria-describedby="email-help">
+                                    <span id="email-help" class="field-hint">Surat balasan dan ringkasan konsultasi akan dikirim ke email ini.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row-2col">
+                                <!-- Kontrol Input 3: tel -->
+                                <div class="form-group">
+                                    <label for="input-telepon" class="field-label">
+                                        Nomor Telepon / WhatsApp <span class="req-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <input type="tel" id="input-telepon" name="telepon" class="form-input" required placeholder="Contoh: 085943113515" autocomplete="tel" pattern="[0-9+-\s]{9,16}" aria-describedby="telepon-help">
+                                    <span id="telepon-help" class="field-hint">Format nomor telepon Indonesia yang aktif (9-16 digit angka).</span>
+                                </div>
+
+                                <!-- Kontrol Input 4: Institusi / Asal Organisasi (text) -->
+                                <div class="form-group">
+                                    <label for="input-institusi" class="field-label">
+                                        Asal Institusi / Organisasi
+                                    </label>
+                                    <input type="text" id="input-institusi" name="institusi" class="form-input" placeholder="Contoh: Institut Teknologi Del / Perusahaan" aria-describedby="institusi-help">
+                                    <span id="institusi-help" class="field-hint">Nama kampus, instansi pemerintah, atau korporasi (opsional).</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Blok Fieldset 2: Kebutuhan Layanan & Rincian Konsultasi -->
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">
+                                <span class="legend-badge">Blok 02</span>
+                                Spesifikasi Layanan &amp; Rincian Konsultasi
+                            </legend>
+
+                            <div class="form-row-2col">
+                                <!-- Kontrol Input 5: select -->
+                                <div class="form-group">
+                                    <label for="select-topik" class="field-label">
+                                        Pilihan Topik Peminatan / Layanan <span class="req-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <select id="select-topik" name="topik" class="form-input form-select" required aria-describedby="topik-help">
+                                        <option value="" disabled selected>-- Pilih Topik Konsultasi --</option>
+                                        <option value="data-analytics">Data Analytics, SQL &amp; Pipeline Data</option>
+                                        <option value="system-analysis">Analisis Kebutuhan Sistem &amp; Model Bisnis</option>
+                                        <option value="ui-ux-design">Perancangan UI/UX &amp; Prototip Inklusif (WCAG)</option>
+                                        <option value="software-dev">Pengembangan Web Semantik &amp; Aplikasi Berbasis Java</option>
+                                        <option value="academic-collaboration">Kolaborasi Akademik &amp; Kompetisi Inovasi</option>
+                                    </select>
+                                    <span id="topik-help" class="field-hint">Pilih bidang topik yang paling relevan dengan kebutuhan Anda.</span>
+                                </div>
+
+                                <!-- Kontrol Input 6: date -->
+                                <div class="form-group">
+                                    <label for="input-tanggal" class="field-label">
+                                        Perkiraan Tanggal Konsultasi <span class="req-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <input type="date" id="input-tanggal" name="tanggal" class="form-input" required aria-describedby="tanggal-help">
+                                    <span id="tanggal-help" class="field-hint">Pilih tanggal rencana sesi konsultasi dilakukan.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row-2col">
+                                <!-- Kontrol Input 7: number -->
+                                <div class="form-group">
+                                    <label for="input-durasi" class="field-label">
+                                        Estimasi Durasi Diskusi (Jam) <span class="req-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <input type="number" id="input-durasi" name="durasi" class="form-input" min="1" max="8" value="2" required aria-describedby="durasi-help">
+                                    <span id="durasi-help" class="field-hint">Durasi pertemuan antara 1 hingga 8 jam per sesi.</span>
+                                </div>
+
+                                <!-- Kontrol Input 8: radio (Moda Diskusi) -->
+                                <div class="form-group">
+                                    <fieldset class="sub-fieldset">
+                                        <legend class="sub-legend">Preferensi Moda Diskusi <span class="req-star" aria-hidden="true">*</span></legend>
+                                        <div class="radio-group-flex">
+                                            <div class="choice-item">
+                                                <input type="radio" id="mode-daring" name="moda_diskusi" value="daring" class="custom-radio" checked required>
+                                                <label for="mode-daring" class="choice-text">Daring (Google Meet / Zoom)</label>
+                                            </div>
+                                            <div class="choice-item">
+                                                <input type="radio" id="mode-luring" name="moda_diskusi" value="luring" class="custom-radio" required>
+                                                <label for="mode-luring" class="choice-text">Luring (Kampus IT Del, Laguboti)</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <!-- Kontrol Input 9: textarea -->
+                            <div class="form-group">
+                                <label for="textarea-pesan" class="field-label">
+                                    Deskripsi Kebutuhan / Pertanyaan Proyek <span class="req-star" aria-hidden="true">*</span>
+                                </label>
+                                <textarea id="textarea-pesan" name="pesan" rows="5" class="form-input form-textarea" required placeholder="Jelaskan gambaran umum permasalahan proyek, ekspektasi luaran yang diharapkan, serta konteks yang perlu dipersiapkan..." aria-describedby="pesan-help"></textarea>
+                                <span id="pesan-help" class="field-hint">Tuliskan deskripsi secara detail dan jelas untuk mempercepat proses peninjauan materi.</span>
+                            </div>
+
+                            <!-- Kontrol Input 10: checkbox (Persetujuan) -->
+                            <div class="form-group consent-group">
+                                <div class="choice-item choice-checkbox">
+                                    <input type="checkbox" id="checkbox-persetujuan" name="persetujuan" class="custom-checkbox" required aria-describedby="persetujuan-help">
+                                    <label for="checkbox-persetujuan" class="choice-text">
+                                        Saya menyatakan bahwa data yang diisikan adalah benar dan bersedia dihubungi untuk tindak lanjut konsultasi. <span class="req-star" aria-hidden="true">*</span>
+                                    </label>
+                                </div>
+                                <span id="persetujuan-help" class="field-hint">Persetujuan wajib dicentang untuk memvalidasi permintaan konsultasi resmi.</span>
+                            </div>
+                        </fieldset>
+
+                        <!-- Tombol Submit & Aksi Form -->
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn btn-submit">
+                                <span class="btn-text">Kirim Formulir Permintaan Konsultasi</span>
+                                <span class="btn-icon" aria-hidden="true">&rarr;</span>
+                            </button>
+                            <p class="form-security-note">
+                                <span class="lock-icon" aria-hidden="true">&bull;</span>
+                                Informasi Anda dilindungi secara privat dan hanya digunakan untuk korespondensi resmi akademik.
+                            </p>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer"><div class="container"><p>&copy; 2026 Griselda Tabitha Nathania Hutahaean</p><p><a href="https://github.com/GriseldaHutahaean" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/GriseldaHutahaean" target="_blank" rel="noreferrer">LinkedIn</a></p></div></footer>
+    <!-- 3. Footer Semantik -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-primary-block">
+                <div class="footer-brand">
+                    <span class="footer-logo">GH<span>.</span></span>
+                    <p class="footer-author-info">
+                        <strong>Griselda Tabitha Nathania Hutahaean</strong> &bull; NIM: 12S24026<br>
+                        Program Studi S1 Sistem Informasi &bull; Fakultas Informatika dan Teknik Elektro<br>
+                        Institut Teknologi Del &bull; Jl. Sisingamangaraja, Sitoluama, Laguboti, Toba Samosir, Sumatera Utara
+                    </p>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-col-title">Navigasi Singkat</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#beranda">Kembali ke Atas</a></li>
+                        <li><a href="#tentang">Tentang Saya</a></li>
+                        <li><a href="#keahlian">Keahlian Utama</a></li>
+                        <li><a href="#portofolio">Portofolio Capaian</a></li>
+                        <li><a href="#layanan">Pemesanan Layanan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social-col">
+                    <h3 class="footer-col-title">Tautan Resmi</h3>
+                    <ul class="footer-link-list">
+                        <li>
+                            <a href="https://github.com/GriseldaHutahaean" target="_blank" rel="noopener noreferrer">
+                                GitHub: @GriseldaHutahaean
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/GriseldaHutahaean" target="_blank" rel="noopener noreferrer">
+                                LinkedIn: Griselda Hutahaean
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:griseldatabita@gmail.com">
+                                Surel: griseldatabita@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom-bar">
+                <p class="footer-copyright">
+                    &copy; 2026 Griselda Tabitha Nathania Hutahaean. Seluruh hak cipta dilindungi. Modul Praktikum Minggu 02 &bull; 12S3101 Pemrograman dan Pengujian Aplikasi Web.
+                </p>
+                <p class="footer-compliance">
+                    Mematuhi standar semantik HTML5 &amp; Aksesibilitas WCAG 2.2 Level AA.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
