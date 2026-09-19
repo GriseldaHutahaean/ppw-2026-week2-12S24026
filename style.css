@@ -286,6 +286,7 @@ body {
 
 .gradient-text {
     background: var(--grad-hero-text);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
@@ -1675,3 +1676,4 @@ body {
         scroll-behavior: auto !important;
     }
 }
+
