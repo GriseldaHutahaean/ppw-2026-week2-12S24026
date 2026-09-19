@@ -22,7 +22,7 @@
 
 Halaman web portofolio profil profesional tunggal (*Single Page Showcase Webpage*) ini dirancang untuk menampilkan profil akademik, portofolio karya, galeri keahlian terstruktur, serta formulir pemesanan layanan konsultasi proyek yang sepenuhnya **estetik, rapi, responsif, dan accessible (WCAG 2.2 Level AA)**.
 
-Desain mengusung konsep **Minimalis Profesional dengan Aksen Gradasi Biru (Executive Tech Showcase)** yang bebas dari tata letak generik contoh praktikum dasar, memadukan kenyamanan visual (*visual appeal*), hierarki tipografi modern (*Plus Jakarta Sans*), dan keterbacaan tinggi.
+Desain mengusung konsep **Minimalis Elegan dengan Aksen Gradasi Beige (Warm Beige & Caramel Luxe Showcase)** yang bebas dari tata letak generik contoh praktikum dasar, memadukan kenyamanan visual (*visual appeal*), hierarki tipografi modern (*Plus Jakarta Sans*), foto resmi mahasiswa dengan jas almamater Institut Teknologi Del, dan keterbacaan tinggi berstandar WCAG 2.2 AA.
 
 ---
 
@@ -70,18 +70,18 @@ Desain mengusung konsep **Minimalis Profesional dengan Aksen Gradasi Biru (Execu
 * ✅ **Validasi Native & Aksesibilitas WCAG 2.2 AA**:
   * Atribut `required`, `pattern`, `min`, `max`, `placeholder`.
   * Atribut `aria-describedby` terhubung ke elemen petunjuk bantuan (`.field-hint`).
-  * Visible focus ring berkontras tinggi (3.5px ring biru elektrik) pada keadaan `:focus` dan `:focus-visible`.
+  * Visible focus ring berkontras tinggi (3.5px ring warm caramel/amber) pada keadaan `:focus` dan `:focus-visible`.
   * Dapat dinavigasikan sepenuhnya menggunakan papan ketik (*keyboard accessible*).
 
 ### 4. Estetika & Tata Letak Modern CSS (Bobot 25%)
 * ✅ **Eksternal CSS**: Seluruh aturan gaya dikelola terpusat pada berkas `style.css`.
 * ✅ **Universal Box Sizing Reset**: `*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }`.
-* ✅ **Penerapan Rumus Harmonisasi Warna 60-30-10**:
-  * **60% Dominan**: Latar belakang bersih `#ffffff` dan `#f8fafc` dengan aksen *subtle radial blue gradient glow*.
-  * **30% Struktural & Kontras**: Teks dan border navy/slate (`#0f172a`, `#334155`, `#e2e8f0`) dengan kontras rasio melebihi standar WCAG AA (rasio > 7:1).
-  * **10% Aksen Gradasi Biru Profesional**: Gradasi biru sapphire ke cyan elektrik (`linear-gradient(135deg, #1e40af, #0284c7, #0ea5e9)`) pada tombol aksi, header tabel, badge, dan efek hover.
-* ✅ **Tipografi & Tampilan Visual**: Font *Plus Jakarta Sans* & *JetBrains Mono*, sudut membulat halus (`border-radius: 8px - 24px`), bayangan lembut bertingkat (*diffused soft shadow*), serta transisi interaktif bebas getaran.
-* ✅ **Tata Letak Flexbox & CSS Grid**: Pengorganisasian komponen hero dua kolom, grid kartu keahlian, grid proyek, dan formulir.
+* ✅ **Penerapan Rumus Harmonisasi Warna 60-30-10 (Gradasi Beige & Earth Luxe)**:
+  * **60% Dominan**: Latar belakang bersih bernuansa linen ivory (`#fcfbfa`) dan warm beige (`#f5f0eb`) dengan aksen *subtle radial warm sand glow*.
+  * **30% Struktural & Kontras**: Teks dan batas bertema roasted espresso dan walnut (`#1f1915`, `#3d342e`, `#e8dfd5`) dengan kontras rasio tinggi melampaui standar WCAG AA (rasio > 7.5:1).
+  * **10% Aksen Gradasi Beige & Warm Caramel**: Gradasi karamel, bronze, dan champagne (`linear-gradient(135deg, #785028, #9c6e43, #be9063, #d8b28a)`) pada tombol aksi, header tabel, badge, dan avatar ring.
+* ✅ **Tipografi & Tampilan Visual**: Font *Plus Jakarta Sans* & *JetBrains Mono*, sudut membulat halus (`border-radius: 8px - 24px`), bayangan lembut bernuansa warm brown (*diffused soft shadow*), serta transisi interaktif bebas getaran.
+* ✅ **Tata Letak Flexbox & CSS Grid**: Pengorganisasian komponen hero dua kolom, kartu snapshot profil dengan foto almamater Del, grid kartu keahlian, grid proyek, dan formulir.
 * ✅ **Desain Responsif Media Queries**: Menggunakan breakpoint `@media (max-width: 992px)`, `@media (max-width: 768px)`, dan `@media (max-width: 480px)`.
 * ✅ **Preferensi Gerak Aksesibel**: `@media (prefers-reduced-motion: reduce)` untuk kenyamanan pengguna sensitif animasi.
 
@@ -97,7 +97,8 @@ Desain mengusung konsep **Minimalis Profesional dengan Aksen Gradasi Biru (Execu
 ```text
 ppw-2026-week2-12S24026/
 ├── index.html       # Struktur semantik dokumen HTML5
-├── style.css        # Tata letak, tipografi, gradasi biru, & media queries responsif
+├── style.css        # Tata letak, tipografi, gradasi beige, & media queries responsif
+├── profile.jpg      # Foto profil resmi mahasiswa berjas almamater Institut Teknologi Del
 └── README.md        # Dokumentasi lengkap, identitas mahasiswa, dan panduan proyek
 ```
 

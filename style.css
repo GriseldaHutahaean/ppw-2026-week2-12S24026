@@ -2,7 +2,7 @@
    PORTOFOLIO PROFESIONAL GRISLEDA TABITHA NATHANIA HUTAHAEAN (12S24026)
    Mata Kuliah: 12S3101 - Pemrograman dan Pengujian Aplikasi Web
    Institut Teknologi Del - S1 Sistem Informasi
-   Gaya Desain: Minimalis Profesional dengan Gradasi Biru (Executive Tech)
+   Gaya Desain: Minimalis Elegan dengan Gradasi Beige (Warm Beige & Caramel Luxe)
    Mematuhi Standar: WCAG 2.2 Level AA & Semantik Modern HTML5
    ========================================================================== */
 
@@ -18,50 +18,53 @@
 }
 
 :root {
-    /* Palet Warna 60-30-10 */
-    /* 60% Dominan (Latar Belakang Netral Bersih & Sejuk) */
-    --color-bg-base: #ffffff;
-    --color-bg-subtle: #f8fafc;
-    --color-bg-card: #ffffff;
-    --color-bg-card-alt: #f0f7ff;
-    --color-bg-surface-elevated: rgba(255, 255, 255, 0.88);
+    /* Palet Warna 60-30-10: Gradasi Beige & Warm Earth Luxe */
 
-    /* 30% Kontras Struktural, Batas & Tipografi (Navy & Slate) */
-    --color-text-main: #0f172a;       /* Slate 900: Kontras Utama */
-    --color-text-body: #334155;       /* Slate 700: Rasio Kontras > 7:1 */
-    --color-text-muted: #64748b;      /* Slate 500: Rasio Kontras > 4.5:1 */
-    --color-text-faint: #94a3b8;      /* Slate 400: Label halus */
-    --color-border-light: #e2e8f0;    /* Slate 200: Garis batas halus */
-    --color-border-subtle: #cbd5e1;   /* Slate 300 */
-    --color-navy-dark: #090e1a;       /* Dark Navy untuk Footer */
+    /* 60% Dominan (Latar Belakang Netral Hangat, Linen, & Krem Alami) */
+    --color-bg-base: #fcfbfa;               /* Linen Ivory Lembut */
+    --color-bg-subtle: #f5f0eb;             /* Soft Oatmeal Warm Beige */
+    --color-bg-card: #ffffff;               /* Pure Warm Porcelain untuk Kartu */
+    --color-bg-card-alt: #faf5ef;           /* Sand Tinted Card */
+    --color-bg-surface-elevated: rgba(252, 251, 250, 0.92);
 
-    /* 10% Aksen Interaktif & Gradasi Biru Profesional */
-    --color-primary: #0284c7;         /* Sky 600 */
-    --color-primary-deep: #1d4ed8;    /* Blue 700 */
-    --color-primary-dark: #1e3a8a;    /* Blue 900 */
-    --color-primary-light: #38bdf8;   /* Sky 400 */
-    --color-cyan-glow: #06b6d4;       /* Cyan 500 */
-    --color-accent-badge: #e0f2fe;    /* Sky 100 */
+    /* 30% Kontras Struktural, Batas & Tipografi (Roasted Espresso & Walnut) */
+    --color-text-main: #1f1915;            /* Deep Roasted Espresso: Kontras > 12:1 */
+    --color-text-body: #3d342e;            /* Walnut Umber: Rasio Kontras > 7.5:1 */
+    --color-text-muted: #6b5d52;           /* Warm Earth Taupe: Rasio Kontras > 4.6:1 (WCAG AA) */
+    --color-text-faint: #9e8f82;           /* Soft Sandstone Placeholder */
+    --color-border-light: #e8dfd5;         /* Garis Batas Beige Halus */
+    --color-border-subtle: #dbcebf;        /* Garis Batas Beige Terdefinisi */
+    --color-footer-dark: #191411;          /* Dark Espresso Grounding untuk Footer */
 
-    /* Gradasi Biru Utama */
-    --grad-primary: linear-gradient(135deg, #1e40af 0%, #0284c7 50%, #0ea5e9 100%);
-    --grad-primary-hover: linear-gradient(135deg, #1e3a8a 0%, #0369a1 50%, #0284c7 100%);
-    --grad-subtle-glow: radial-gradient(circle at 10% 20%, rgba(2, 132, 199, 0.08) 0%, transparent 55%);
-    --grad-header-table: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #0369a1 100%);
-    --grad-card-border: linear-gradient(135deg, rgba(2, 132, 199, 0.3), rgba(6, 182, 212, 0.1));
+    /* 10% Aksen Interaktif & Gradasi Beige Mewah (Warm Caramel, Amber & Bronze) */
+    --color-primary: #8c6239;              /* Warm Caramel Brown (Accessible > 4.6:1 on white) */
+    --color-primary-deep: #6f4b27;         /* Deep Roasted Bronze */
+    --color-primary-dark: #543719;         /* Dark Mahogany Bronze */
+    --color-primary-light: #b88d65;        /* Warm Golden Sand */
+    --color-accent-amber: #d4a373;         /* Champagne Amber */
+    --color-accent-badge: #f1e7dc;         /* Cashmere Cream Badge */
+
+    /* Gradasi Beige & Caramel Utama */
+    --grad-primary: linear-gradient(135deg, #785028 0%, #9c6e43 45%, #be9063 80%, #d8b28a 100%);
+    --grad-primary-hover: linear-gradient(135deg, #643f1b 0%, #875b32 45%, #aa7c4f 100%);
+    --grad-hero-text: linear-gradient(135deg, #5c3817 0%, #8f6236 45%, #b88d65 100%);
+    --grad-subtle-glow: radial-gradient(circle at 10% 20%, rgba(190, 144, 99, 0.12) 0%, transparent 60%);
+    --grad-header-table: linear-gradient(135deg, #241a14 0%, #443226 50%, #734d2c 100%);
+    --grad-card-border: linear-gradient(135deg, rgba(140, 98, 57, 0.35), rgba(216, 178, 138, 0.15));
+    --grad-avatar-ring: linear-gradient(135deg, #785028 0%, #b88d65 50%, #edd6be 100%);
 
     /* Indikator Status & Fungsional */
-    --color-success-bg: #ecfdf5;
-    --color-success-text: #047857;
-    --color-success-dot: #10b981;
-    --color-req-star: #dc2626;
+    --color-success-bg: #edf6ee;
+    --color-success-text: #236831;
+    --color-success-dot: #2e8b57;
+    --color-req-star: #b91c1c;
 
-    /* Bayangan Halus (Diffused Soft Shadows) */
-    --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
-    --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
-    --shadow-card: 0 12px 30px -5px rgba(2, 132, 199, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
-    --shadow-glow: 0 0 25px rgba(2, 132, 199, 0.22);
+    /* Bayangan Halus Bertingkat Bernuansa Warm Brown */
+    --shadow-sm: 0 1px 2px 0 rgba(45, 33, 23, 0.04);
+    --shadow-md: 0 4px 8px -1px rgba(45, 33, 23, 0.06), 0 2px 4px -2px rgba(45, 33, 23, 0.03);
+    --shadow-lg: 0 12px 20px -3px rgba(45, 33, 23, 0.07), 0 4px 6px -4px rgba(45, 33, 23, 0.03);
+    --shadow-card: 0 12px 30px -5px rgba(140, 98, 57, 0.08), 0 4px 10px -2px rgba(45, 33, 23, 0.04);
+    --shadow-glow: 0 0 25px rgba(184, 141, 101, 0.25);
 
     /* Sudut Lengkung (Rounded Corners) */
     --radius-sm: 8px;
@@ -85,9 +88,9 @@ html {
 body {
     background-color: var(--color-bg-base);
     background-image: 
-        radial-gradient(at 100% 0%, rgba(2, 132, 199, 0.07) 0px, transparent 50%),
-        radial-gradient(at 0% 50%, rgba(6, 182, 212, 0.05) 0px, transparent 50%),
-        radial-gradient(at 80% 90%, rgba(30, 58, 138, 0.06) 0px, transparent 50%);
+        radial-gradient(at 100% 0%, rgba(216, 178, 138, 0.16) 0px, transparent 55%),
+        radial-gradient(at 0% 50%, rgba(230, 207, 182, 0.14) 0px, transparent 50%),
+        radial-gradient(at 80% 90%, rgba(140, 98, 57, 0.10) 0px, transparent 55%);
     background-attachment: fixed;
     color: var(--color-text-body);
     font-family: var(--font-sans);
@@ -118,11 +121,11 @@ body {
 
 .skip-link:focus {
     top: 20px;
-    outline: 3px solid var(--color-cyan-glow);
+    outline: 3px solid var(--color-accent-amber);
 }
 
 /* --------------------------------------------------------------------------
-   2. Header & Navigasi Semantik (Sticky, Frosted Glass & Minimalis)
+   2. Header & Navigasi Semantik (Sticky, Frosted Glass Beige)
    -------------------------------------------------------------------------- */
 .site-header {
     background: var(--color-bg-surface-elevated);
@@ -139,7 +142,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-    height: 72px;
+    height: 74px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,7 +171,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+    box-shadow: 0 4px 10px rgba(120, 80, 40, 0.25);
     transition: var(--transition-fast);
 }
 
@@ -201,7 +204,7 @@ body {
 
 .nav-link:hover {
     color: var(--color-primary);
-    background: rgba(2, 132, 199, 0.05);
+    background: rgba(140, 98, 57, 0.08);
 }
 
 .nav-link:focus-visible {
@@ -215,13 +218,13 @@ body {
     font-weight: 600;
     padding: 8px 18px;
     border-radius: var(--radius-full);
-    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+    box-shadow: 0 4px 12px rgba(120, 80, 40, 0.22);
     margin-left: 8px;
 }
 
 .nav-link.nav-cta:hover {
     background: var(--grad-primary-hover);
-    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+    box-shadow: 0 6px 16px rgba(120, 80, 40, 0.32);
     transform: translateY(-1px);
 }
 
@@ -254,12 +257,12 @@ body {
     gap: 10px;
     width: fit-content;
     background: var(--color-accent-badge);
-    color: #0369a1;
+    color: var(--color-primary-deep);
     font-size: 12.5px;
     font-weight: 600;
     padding: 6px 14px;
     border-radius: var(--radius-full);
-    border: 1px solid rgba(2, 132, 199, 0.25);
+    border: 1px solid rgba(140, 98, 57, 0.25);
     margin-bottom: 22px;
 }
 
@@ -268,7 +271,7 @@ body {
     height: 8px;
     background-color: var(--color-success-dot);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.2);
 }
 
 .hero-title {
@@ -281,7 +284,7 @@ body {
 }
 
 .gradient-text {
-    background: var(--grad-primary);
+    background: var(--grad-hero-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
@@ -332,12 +335,12 @@ body {
 .btn-primary {
     background: var(--grad-primary);
     color: #ffffff;
-    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+    box-shadow: 0 4px 14px rgba(120, 80, 40, 0.25);
 }
 
 .btn-primary:hover {
     background: var(--grad-primary-hover);
-    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.4);
+    box-shadow: 0 8px 20px rgba(120, 80, 40, 0.35);
     transform: translateY(-2px);
 }
 
@@ -351,7 +354,7 @@ body {
 }
 
 .btn-secondary {
-    background: var(--color-bg-base);
+    background: #ffffff;
     color: var(--color-text-main);
     border-color: var(--color-border-subtle);
     box-shadow: var(--shadow-sm);
@@ -360,7 +363,7 @@ body {
 .btn-secondary:hover {
     background: var(--color-bg-subtle);
     border-color: var(--color-primary);
-    color: var(--color-primary);
+    color: var(--color-primary-deep);
     transform: translateY(-2px);
 }
 
@@ -400,7 +403,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   4. Aside Semantik: Executive Snapshot Card
+   4. Aside Semantik: Executive Snapshot Card dengan Foto Mahasiswa
    -------------------------------------------------------------------------- */
 .profile-aside {
     width: 100%;
@@ -428,9 +431,9 @@ body {
 }
 
 .aside-card:hover {
-    box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.12);
+    box-shadow: 0 16px 36px -4px rgba(120, 80, 40, 0.12);
     transform: translateY(-4px);
-    border-color: rgba(2, 132, 199, 0.3);
+    border-color: rgba(140, 98, 57, 0.35);
 }
 
 .aside-card-top {
@@ -438,33 +441,36 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
+    gap: 16px;
 }
 
+/* Bingkai Foto Profil Resmi */
 .avatar-ring {
-    width: 72px;
-    height: 72px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
-    background: var(--grad-primary);
-    padding: 3px;
-    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+    background: var(--grad-avatar-ring);
+    padding: 3.5px;
+    box-shadow: 0 6px 18px rgba(120, 80, 40, 0.22);
+    flex-shrink: 0;
+    position: relative;
+    transition: var(--transition-fast);
 }
 
-.avatar-inner {
+.aside-card:hover .avatar-ring {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(120, 80, 40, 0.3);
+}
+
+.avatar-photo {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.avatar-initials {
-    font-size: 24px;
-    font-weight: 800;
-    background: var(--grad-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    object-fit: cover;
+    object-position: center 16%;
+    display: block;
+    border: 2px solid #ffffff;
+    background-color: var(--color-bg-subtle);
 }
 
 .aside-status-chip {
@@ -477,7 +483,7 @@ body {
     font-weight: 600;
     padding: 6px 12px;
     border-radius: var(--radius-full);
-    border: 1px solid rgba(16, 185, 129, 0.25);
+    border: 1px solid rgba(46, 139, 87, 0.25);
 }
 
 .pulse-dot {
@@ -563,7 +569,7 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    background: rgba(2, 132, 199, 0.08);
+    background: rgba(140, 98, 57, 0.08);
     color: var(--color-primary-deep);
     font-size: 13px;
     font-weight: 600;
@@ -571,13 +577,14 @@ body {
     border-radius: var(--radius-sm);
     text-decoration: none;
     transition: var(--transition-fast);
-    border: 1px solid rgba(2, 132, 199, 0.2);
+    border: 1px solid rgba(140, 98, 57, 0.22);
 }
 
 .aside-action-btn:hover {
-    background: var(--color-primary);
+    background: var(--grad-primary);
     color: #ffffff;
-    border-color: var(--color-primary);
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(120, 80, 40, 0.2);
 }
 
 /* --------------------------------------------------------------------------
@@ -706,7 +713,7 @@ body {
 }
 
 .pillar-card:hover {
-    border-color: rgba(2, 132, 199, 0.35);
+    border-color: rgba(140, 98, 57, 0.35);
     box-shadow: var(--shadow-md);
     transform: translateX(4px);
 }
@@ -715,7 +722,7 @@ body {
     font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-primary-deep);
     background: var(--color-accent-badge);
     padding: 6px 10px;
     border-radius: var(--radius-sm);
@@ -756,7 +763,7 @@ body {
 }
 
 .skill-group-card:hover {
-    border-color: rgba(2, 132, 199, 0.35);
+    border-color: rgba(140, 98, 57, 0.35);
     box-shadow: var(--shadow-card);
     transform: translateY(-4px);
 }
@@ -771,7 +778,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--color-primary);
+    color: var(--color-primary-deep);
     background: var(--color-accent-badge);
     padding: 3px 10px;
     border-radius: var(--radius-full);
@@ -812,7 +819,7 @@ body {
 
 .tag-pill:hover {
     background: var(--color-accent-badge);
-    border-color: rgba(2, 132, 199, 0.4);
+    border-color: rgba(140, 98, 57, 0.4);
     color: var(--color-primary-deep);
     transform: translateY(-1px);
 }
@@ -839,7 +846,7 @@ body {
 }
 
 .project-spotlight-card:hover {
-    border-color: rgba(2, 132, 199, 0.4);
+    border-color: rgba(140, 98, 57, 0.4);
     box-shadow: var(--shadow-card);
     transform: translateY(-4px);
 }
@@ -933,8 +940,8 @@ body {
     font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 500;
-    background: #f1f5f9;
-    color: #1e293b;
+    background: #f4eee7;
+    color: #2e261f;
     padding: 4px 10px;
     border-radius: 4px;
     border: 1px solid var(--color-border-light);
@@ -1039,7 +1046,7 @@ body {
     display: inline-block;
     font-size: 11.5px;
     font-weight: 500;
-    background: rgba(2, 132, 199, 0.08);
+    background: rgba(140, 98, 57, 0.09);
     color: var(--color-primary-deep);
     padding: 3px 8px;
     border-radius: 4px;
@@ -1059,8 +1066,8 @@ body {
     display: inline-block;
     font-size: 11.5px;
     font-weight: 600;
-    background: #e0f2fe;
-    color: #0284c7;
+    background: #f1e6da;
+    color: var(--color-primary-deep);
     padding: 4px 10px;
     border-radius: var(--radius-full);
 }
@@ -1070,11 +1077,11 @@ body {
 }
 
 .data-table tbody tr:nth-child(even) {
-    background-color: #fafbfc;
+    background-color: #fdfbf8;
 }
 
 .data-table tbody tr:hover {
-    background-color: #f0f7ff;
+    background-color: #f5efe8;
 }
 
 .data-table tfoot {
@@ -1144,7 +1151,7 @@ body {
 
 .step-item:hover {
     background: #ffffff;
-    border-color: rgba(2, 132, 199, 0.3);
+    border-color: rgba(140, 98, 57, 0.35);
     box-shadow: var(--shadow-sm);
     transform: translateX(4px);
 }
@@ -1158,7 +1165,7 @@ body {
     background: var(--grad-primary);
     padding: 6px 12px;
     border-radius: var(--radius-sm);
-    box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
+    box-shadow: 0 2px 6px rgba(120, 80, 40, 0.25);
     flex-shrink: 0;
 }
 
@@ -1273,16 +1280,16 @@ body {
     color: var(--color-text-faint);
 }
 
-/* Indikator Fokus WCAG 2.2 AA (Visible Focus Ring Berkontras Tinggi) */
+/* Indikator Fokus WCAG 2.2 AA (Visible Focus Ring Bernuansa Caramel/Beige) */
 .form-input:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3.5px rgba(2, 132, 199, 0.22);
+    box-shadow: 0 0 0 3.5px rgba(140, 98, 57, 0.22);
 }
 
 .form-select {
     cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b5d52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 14px center;
     appearance: none;
@@ -1389,7 +1396,7 @@ body {
     font-size: 15px;
     font-weight: 700;
     border-radius: var(--radius-md);
-    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.3);
+    box-shadow: 0 6px 18px rgba(120, 80, 40, 0.28);
     border: none;
     cursor: pointer;
     transition: var(--transition-fast);
@@ -1397,7 +1404,7 @@ body {
 
 .btn-submit:hover {
     background: var(--grad-primary-hover);
-    box-shadow: 0 10px 24px rgba(2, 132, 199, 0.4);
+    box-shadow: 0 10px 24px rgba(120, 80, 40, 0.38);
     transform: translateY(-2px);
 }
 
@@ -1429,13 +1436,13 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   11. Footer Semantik
+   11. Footer Semantik (Dark Espresso & Warm Sandstone Accents)
    -------------------------------------------------------------------------- */
 .site-footer {
-    background: var(--color-navy-dark);
-    color: #cbd5e1;
+    background: var(--color-footer-dark);
+    color: #c9beaf;
     padding: 60px 0 30px;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid #2e241e;
 }
 
 .footer-container {
@@ -1461,17 +1468,17 @@ body {
 }
 
 .footer-logo span {
-    color: var(--color-primary-light);
+    color: var(--color-accent-amber);
 }
 
 .footer-author-info {
     font-size: 13px;
     line-height: 1.6;
-    color: #94a3b8;
+    color: #9e8f82;
 }
 
 .footer-author-info strong {
-    color: #f1f5f9;
+    color: #f7f2eb;
 }
 
 .footer-col-title {
@@ -1491,26 +1498,26 @@ body {
 }
 
 .footer-link-list a {
-    color: #94a3b8;
+    color: #b0a193;
     text-decoration: none;
     font-size: 13px;
     transition: var(--transition-fast);
 }
 
 .footer-link-list a:hover {
-    color: var(--color-primary-light);
+    color: var(--color-accent-amber);
     transform: translateX(3px);
     display: inline-block;
 }
 
 .footer-link-list a:focus-visible {
-    outline: 2px solid var(--color-primary-light);
+    outline: 2px solid var(--color-accent-amber);
     outline-offset: 2px;
 }
 
 .footer-divider {
     border: none;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid #2e241e;
     margin-bottom: 24px;
 }
 
@@ -1521,11 +1528,11 @@ body {
     flex-wrap: wrap;
     gap: 14px;
     font-size: 12px;
-    color: #64748b;
+    color: #8c7d71;
 }
 
 .footer-compliance {
-    color: #38bdf8;
+    color: var(--color-accent-amber);
     font-weight: 500;
 }
 
