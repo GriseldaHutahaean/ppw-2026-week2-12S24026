@@ -1,14 +1,14 @@
-/* ==========================================================================
-   PORTOFOLIO PROFESIONAL GRISLEDA TABITHA NATHANIA HUTAHAEAN (12S24026)
-   Mata Kuliah: 12S3101 - Pemrograman dan Pengujian Aplikasi Web
-   Institut Teknologi Del - S1 Sistem Informasi
-   Gaya Desain: Coastal Midnight Luxe (Deep Oceanic Midnight, Bioluminescent Cyan & Seafoam)
-   Mematuhi Standar: WCAG 2.2 Level AA & Semantik Modern HTML5
-   ========================================================================== */
+/* 
+    portofolio profesional griselda tabitha nathania hutahaean (12s24026)
+    mata kuliah: 12s3101 - pemrograman dan pengujian aplikasi web
+    institut teknologi del - s1 sistem informasi
+    gaya desain: coastal midnight luxe (deep oceanic midnight, bioluminescent cyan & seafoam)
+    mematuhi standar: wcag 2.2 level aa & semantik modern html5
+   */
 
-/* --------------------------------------------------------------------------
-   1. Universal Reset, CSS Custom Properties & Fondasi Tipografi
-   -------------------------------------------------------------------------- */
+/*
+    1. reset dasar, variabel css, dan fondasi tipografi
+   */
 *,
 *::before,
 *::after {
@@ -18,63 +18,63 @@
 }
 
 :root {
-    /* Palet Warna 60-30-10: Tema Coastal Midnight Luxe */
+    /* palet warna 60-30-10 untuk tema coastal midnight luxe */
 
-    /* 60% Dominan (Latar Belakang Deep Oceanic Midnight & Abyssal Navy) */
-    --color-bg-base: #0a111e;               /* Deep Coastal Midnight Navy */
-    --color-bg-subtle: #060b14;             /* Abyssal Midnight Sub-layer */
-    --color-bg-card: #101c2e;               /* Midnight Coastal Slate untuk Kartu */
-    --color-bg-card-alt: #0c1626;           /* Deep Marine Trench Card */
+    /* 60% warna dominan untuk latar belakang */
+    --color-bg-base: #0a111e;               /* deep coastal midnight navy */
+    --color-bg-subtle: #060b14;             /* abyssal midnight sub-layer */
+    --color-bg-card: #101c2e;               /* midnight coastal slate untuk kartu */
+    --color-bg-card-alt: #0c1626;           /* deep marine trench card */
     --color-bg-surface-elevated: rgba(10, 17, 30, 0.88);
 
-    /* 30% Kontras Struktural, Batas & Tipografi (Moonlit Silver, Crisp White & Marine Border) */
-    --color-text-main: #f1f5f9;            /* Moonlit White: Kontras > 15:1 */
-    --color-text-body: #cbd5e1;            /* Coastal Silver: Kontras > 10:1 */
-    --color-text-muted: #94a3b8;           /* Misty Sea-Spray Slate: Kontras > 5.5:1 (WCAG AA) */
-    --color-text-faint: #64748b;           /* Deep Ocean Trench Placeholder */
-    --color-border-light: rgba(56, 189, 248, 0.14); /* Garis Batas Aqua Transparan Halus */
-    --color-border-subtle: #1e334d;        /* Garis Batas Marine Terdefinisi */
-    --color-footer-dark: #04070d;          /* Abyssal Edge untuk Footer */
+    /* 30% warna untuk kontras, batas, dan tipografi */
+    --color-text-main: #f1f5f9;            /* moonlit white: kontras tinggi */
+    --color-text-body: #cbd5e1;            /* coastal silver: warna teks utama */
+    --color-text-muted: #94a3b8;           /* misty sea-spray slate: teks redup */
+    --color-text-faint: #64748b;           /* deep ocean trench: placeholder */
+    --color-border-light: rgba(56, 189, 248, 0.14); /* garis aqua transparan halus */
+    --color-border-subtle: #1e334d;        /* garis batas marine */
+    --color-footer-dark: #04070d;          /* abyssal edge untuk footer */
 
-    /* 10% Aksen Interaktif & Gradasi Coastal Midnight (Bioluminescent Cyan, Ocean Sky & Seafoam) */
-    --color-primary: #38bdf8;              /* Electric Coastal Sky */
-    --color-primary-deep: #0ea5e9;         /* Deep Ocean Azure */
-    --color-primary-dark: #0284c7;         /* Marine Sapphire */
-    --color-primary-light: #7dd3fc;        /* Sea Foam Light */
-    --color-accent-teal: #14b8a6;          /* Bioluminescent Seafoam */
-    --color-accent-cyan: #06b6d4;          /* Coastal Cyan Glow */
-    --color-accent-badge: rgba(6, 182, 212, 0.12); /* Translucent Aqua Badge */
+    /* 10% aksen interaktif dan gradasi utama */
+    --color-primary: #38bdf8;              /* electric coastal sky */
+    --color-primary-deep: #0ea5e9;         /* deep ocean azure */
+    --color-primary-dark: #0284c7;         /* marine sapphire */
+    --color-primary-light: #7dd3fc;        /* sea foam light */
+    --color-accent-teal: #14b8a6;          /* bioluminescent seafoam */
+    --color-accent-cyan: #06b6d4;          /* coastal cyan glow */
+    --color-accent-badge: rgba(6, 182, 212, 0.12); /* aqua transparan untuk badge */
 
-    /* Gradasi Coastal Midnight Utama */
-    --grad-primary: linear-gradient(135deg, #0284c7 0%, #0ea5e9 40%, #06b6d4 75%, #14b8a6 100%);
-    --grad-primary-hover: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #0891b2 100%);
-    --grad-hero-text: linear-gradient(135deg, #38bdf8 0%, #67e8f9 45%, #99f6e4 80%, #ffffff 100%);
+    /* gradasi warna utama halaman */
+    --grad-primary: linear-gradient(135deg, #0284c7 0%, #0ea5e9 40%, #06b6d4 75%, #14b8a6 100%); /* sapphire, azure, cyan, seafoam */
+    --grad-primary-hover: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #0891b2 100%); /* deep blue, sapphire, cyan-teal */
+    --grad-hero-text: linear-gradient(135deg, #38bdf8 0%, #67e8f9 45%, #99f6e4 80%, #ffffff 100%); /* sky blue, light cyan, mint, white */
     --grad-subtle-glow: radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.14) 0%, transparent 60%);
-    --grad-header-table: linear-gradient(135deg, #0b1a2e 0%, #102e4e 50%, #0c4366 100%);
+    --grad-header-table: linear-gradient(135deg, #0b1a2e 0%, #102e4e 50%, #0c4366 100%); /* deep navy, marine slate, ocean blue */
     --grad-card-border: linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(20, 184, 166, 0.2));
-    --grad-avatar-ring: linear-gradient(135deg, #0284c7 0%, #06b6d4 50%, #a7f3d0 100%);
+    --grad-avatar-ring: linear-gradient(135deg, #0284c7 0%, #06b6d4 50%, #a7f3d0 100%); /* sapphire, cyan, pale mint */
 
-    /* Indikator Status & Fungsional */
+    /* indikator status dan kebutuhan form */
     --color-success-bg: rgba(16, 185, 129, 0.15);
-    --color-success-text: #34d399;
-    --color-success-dot: #10b981;
-    --color-req-star: #f87171;
+    --color-success-text: #34d399;       /* emerald green */
+    --color-success-dot: #10b981;        /* green */
+    --color-req-star: #f87171;            /* coral red */
 
-    /* Bayangan Halus Bertingkat Bernuansa Coastal Glow */
+    /* bayangan halus untuk memberi efek coastal glow */
     --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 10px -1px rgba(0, 0, 0, 0.4), 0 2px 5px -2px rgba(6, 182, 212, 0.1);
     --shadow-lg: 0 14px 25px -3px rgba(0, 0, 0, 0.5), 0 4px 10px -4px rgba(14, 165, 233, 0.2);
     --shadow-card: 0 14px 34px -5px rgba(0, 0, 0, 0.45), 0 0 20px -3px rgba(6, 182, 212, 0.08);
     --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.3);
 
-    /* Sudut Lengkung (Rounded Corners) */
+    /* ukuran sudut lengkung */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 18px;
     --radius-xl: 24px;
     --radius-full: 9999px;
 
-    /* Tipografi */
+    /* jenis font dan transisi */
     --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-mono: "JetBrains Mono", Consolas, monospace;
     --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,13 +104,13 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Aksesibilitas: Skip to content */
+/* aksesibilitas: skip to content */
 .skip-link {
     position: absolute;
     top: -60px;
     left: 20px;
     background: var(--color-primary-dark);
-    color: #ffffff;
+    color: #ffffff; /* white */
     padding: 12px 20px;
     font-weight: 600;
     border-radius: var(--radius-sm);
@@ -125,9 +125,9 @@ body {
     outline: 3px solid var(--color-accent-cyan);
 }
 
-/* --------------------------------------------------------------------------
-   2. Header & Navigasi Semantik (Sticky, Frosted Glass Coastal Midnight)
-   -------------------------------------------------------------------------- */
+/* 
+    2. header dan navigasi semantik 
+    */
 .site-header {
     background: var(--color-bg-surface-elevated);
     backdrop-filter: blur(18px);
@@ -164,8 +164,7 @@ body {
     width: 38px;
     height: 38px;
     background: var(--grad-primary);
-    color: #ffffff;
-    font-weight: 800;
+    color: #ffffff; /* white */
     font-size: 15px;
     letter-spacing: 0.02em;
     display: flex;
@@ -215,7 +214,7 @@ body {
 
 .nav-link.nav-cta {
     background: var(--grad-primary);
-    color: #ffffff;
+    color: #ffffff; /* white */
     font-weight: 600;
     padding: 8px 18px;
     border-radius: var(--radius-full);
@@ -229,9 +228,9 @@ body {
     transform: translateY(-1px);
 }
 
-/* --------------------------------------------------------------------------
-   3. Hero Section & Profil Eksekutif (Split-Screen Grid)
-   -------------------------------------------------------------------------- */
+/* 
+    3. hero section dan profil singkat
+    */
 .hero-section {
     padding: 60px 0 80px;
     position: relative;
@@ -336,7 +335,7 @@ body {
 
 .btn-primary {
     background: var(--grad-primary);
-    color: #ffffff;
+    color: #ffffff; /* white */
     box-shadow: 0 4px 16px rgba(14, 165, 233, 0.35);
 }
 
@@ -405,7 +404,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   4. Aside Semantik: Executive Snapshot Card dengan Foto Mahasiswa
+    4. aside profil dengan foto mahasiswa
    -------------------------------------------------------------------------- */
 .profile-aside {
     width: 100%;
@@ -446,7 +445,7 @@ body {
     gap: 16px;
 }
 
-/* Bingkai Foto Profil Resmi */
+/* bingkai foto profil */
 .avatar-ring {
     width: 88px;
     height: 88px;
@@ -471,7 +470,7 @@ body {
     object-fit: cover;
     object-position: center 16%;
     display: block;
-    border: 2px solid #101c2e;
+    border: 2px solid #101c2e; /* midnight coastal slate */
     background-color: var(--color-bg-subtle);
 }
 
@@ -584,14 +583,14 @@ body {
 
 .aside-action-btn:hover {
     background: var(--grad-primary);
-    color: #ffffff;
+    color: #ffffff; /* white */
     border-color: transparent;
     box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
 }
 
-/* --------------------------------------------------------------------------
-   5. Section Blok Umum (Header & Layout Grid)
-   -------------------------------------------------------------------------- */
+/*
+    5. blok umum untuk header dan layout grid
+*/
 .section-block {
     padding: 90px 0;
     border-top: 1px solid var(--color-border-light);
@@ -640,9 +639,9 @@ body {
     line-height: 1.6;
 }
 
-/* --------------------------------------------------------------------------
-   6. Section 1: Tentang Saya (Narrative & 3 Pillars)
-   -------------------------------------------------------------------------- */
+/* 
+    6. section 1: tentang saya dan tiga pilar utama
+    */
 .about-grid {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
@@ -744,9 +743,9 @@ body {
     line-height: 1.55;
 }
 
-/* --------------------------------------------------------------------------
-   7. Section 2: Galeri Keahlian Terstruktur (4 Pillars Grid)
-   -------------------------------------------------------------------------- */
+/* 
+    7. section 2: galeri keahlian terstruktur
+    */
 .skills-showcase-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -826,9 +825,9 @@ body {
     transform: translateY(-1px);
 }
 
-/* --------------------------------------------------------------------------
-   8. Section 3: Portofolio Capaian, Kartu Karya & Tabel Semantik
-   -------------------------------------------------------------------------- */
+/* 
+    8. section 3: portofolio, kartu karya, dan tabel semantik
+    */
 .projects-card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -943,14 +942,14 @@ body {
     font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 500;
-    background: #0d1e32;
-    color: #7dd3fc;
+    background: #0d1e32; /* deep marine blue */
+    color: #7dd3fc; /* light sky blue */
     padding: 4px 10px;
     border-radius: 4px;
     border: 1px solid var(--color-border-subtle);
 }
 
-/* Tabel Semantik Lengkap (caption, thead, tbody, tfoot, scope) */
+/* tabel semantik lengkap dengan caption, header, isi, dan footer */
 .table-card-container {
     background: var(--color-bg-card);
     border: 1px solid var(--color-border-light);
@@ -1009,7 +1008,7 @@ body {
 
 .data-table thead {
     background: var(--grad-header-table);
-    color: #ffffff;
+    color: #ffffff; /* white */
 }
 
 .data-table th,
@@ -1023,7 +1022,7 @@ body {
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: #ffffff; /* white */
     border-bottom: none;
 }
 
@@ -1107,7 +1106,7 @@ body {
     text-align: center;
 }
 
-/* 9. Metodologi Siklus Proyek (Ordered List <ol>) */
+/* 9. metodologi siklus proyek dengan ordered list */
 .methodology-card {
     background: var(--color-bg-card);
     border: 1px solid var(--color-border-light);
@@ -1164,7 +1163,7 @@ body {
     font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff; /* white */
     background: var(--grad-primary);
     padding: 6px 12px;
     border-radius: var(--radius-sm);
@@ -1185,9 +1184,9 @@ body {
     line-height: 1.55;
 }
 
-/* --------------------------------------------------------------------------
-   10. Section 4: Formulir Pemesanan Layanan Konsultasi & Aksesibilitas
-   -------------------------------------------------------------------------- */
+/* 
+    10. section 4: formulir konsultasi dan aksesibilitas
+ */
 .form-wrapper-card {
     background: var(--color-bg-card);
     border: 1px solid var(--color-border-light);
@@ -1230,7 +1229,7 @@ body {
     font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff; /* white */
     background: var(--color-primary-dark);
     padding: 2px 8px;
     border-radius: var(--radius-full);
@@ -1272,7 +1271,7 @@ body {
     font-family: inherit;
     font-size: 13.5px;
     color: var(--color-text-main);
-    background: #08111e;
+    background: #08111e; /* deep midnight navy */
     border: 1.5px solid var(--color-border-subtle);
     border-radius: var(--radius-sm);
     padding: 10px 14px;
@@ -1283,7 +1282,7 @@ body {
     color: var(--color-text-faint);
 }
 
-/* Indikator Fokus WCAG 2.2 AA (Visible Focus Ring Bernuansa Coastal Cyan Glow) */
+/* indikator fokus wcag 2.2 aa dengan ring cyan */
 .form-input:focus {
     outline: none;
     border-color: var(--color-primary);
@@ -1314,12 +1313,12 @@ body {
     line-height: 1.4;
 }
 
-/* Radio & Checkbox Styling */
+/* gaya radio button dan checkbox */
 .sub-fieldset {
     border: 1px solid var(--color-border-subtle);
     border-radius: var(--radius-sm);
     padding: 10px 14px;
-    background: #08111e;
+    background: #08111e; /* deep midnight navy */
 }
 
 .sub-legend {
@@ -1367,7 +1366,7 @@ body {
 .consent-group {
     margin-top: 18px;
     padding: 12px 14px;
-    background: #08111e;
+    background: #08111e; /* deep midnight navy */
     border: 1px solid var(--color-border-subtle);
     border-radius: var(--radius-sm);
 }
@@ -1381,7 +1380,7 @@ body {
     line-height: 1.5;
 }
 
-/* Tombol Submit & Aksi Form */
+/* tombol submit dan aksi form */
 .form-submit-row {
     display: flex;
     flex-direction: column;
@@ -1394,7 +1393,7 @@ body {
     width: 100%;
     max-width: 480px;
     background: var(--grad-primary);
-    color: #ffffff;
+    color: #ffffff; /* white */
     padding: 14px 28px;
     font-size: 15px;
     font-weight: 700;
@@ -1438,14 +1437,14 @@ body {
     font-size: 16px;
 }
 
-/* --------------------------------------------------------------------------
-   11. Footer Semantik (Abyssal Midnight & Moonlit Sandstone Accents)
-   -------------------------------------------------------------------------- */
+/*
+    11. footer semantik untuk identitas dan tautan
+*/
 .site-footer {
     background: var(--color-footer-dark);
-    color: #94a3b8;
+    color: #94a3b8; /* misty slate */
     padding: 60px 0 30px;
-    border-top: 1px solid #14243a;
+    border-top: 1px solid #14243a; /* dark marine blue */
 }
 
 .footer-container {
@@ -1464,7 +1463,7 @@ body {
 .footer-logo {
     font-size: 24px;
     font-weight: 800;
-    color: #ffffff;
+    color: #ffffff; /* white */
     display: inline-block;
     margin-bottom: 12px;
     letter-spacing: -0.02em;
@@ -1477,17 +1476,17 @@ body {
 .footer-author-info {
     font-size: 13px;
     line-height: 1.6;
-    color: #94a3b8;
+    color: #94a3b8; /* misty slate */
 }
 
 .footer-author-info strong {
-    color: #f1f5f9;
+    color: #f1f5f9; /* moonlit white */
 }
 
 .footer-col-title {
     font-size: 14px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff; /* white */
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 16px;
@@ -1501,7 +1500,7 @@ body {
 }
 
 .footer-link-list a {
-    color: #94a3b8;
+    color: #94a3b8; /* misty slate */
     text-decoration: none;
     font-size: 13px;
     transition: var(--transition-fast);
@@ -1520,7 +1519,7 @@ body {
 
 .footer-divider {
     border: none;
-    border-top: 1px solid #14243a;
+    border-top: 1px solid #14243a; /* dark marine blue */
     margin-bottom: 24px;
 }
 
@@ -1531,7 +1530,7 @@ body {
     flex-wrap: wrap;
     gap: 14px;
     font-size: 12px;
-    color: #64748b;
+    color: #64748b; /* deep slate blue */
 }
 
 .footer-compliance {
@@ -1539,9 +1538,9 @@ body {
     font-weight: 500;
 }
 
-/* --------------------------------------------------------------------------
-   12. Media Queries & Desain Responsif
-   -------------------------------------------------------------------------- */
+/*
+    12. media queries dan desain responsif
+*/
 @media (max-width: 992px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -1663,9 +1662,9 @@ body {
     }
 }
 
-/* --------------------------------------------------------------------------
-   13. Mode Aksesibilitas: Preferensi Gerak Berkurang (prefers-reduced-motion)
-   -------------------------------------------------------------------------- */
+/* 
+    13. mode aksesibilitas: preferensi gerak berkurang (prefers-reduced-motion)
+    */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

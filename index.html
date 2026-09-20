@@ -9,20 +9,20 @@
     <meta name="keywords" content="Griselda Hutahaean, Portofolio, Sistem Informasi, Institut Teknologi Del, Data Analytics, UI/UX, Web Developer">
     <title>Griselda Hutahaean | Executive Portfolio &amp; Technical Showcase</title>
 
-    <!-- Google Fonts: Plus Jakarta Sans (Modern Clean Sans-Serif) -->
+    <!-- memakai google fonts supaya tampilan teks lebih rapi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Stylesheet Eksternal -->
+    <!-- menghubungkan file css eksternal -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Skip to main content link for screen reader and keyboard accessibility -->
+    <!-- tautan pintas untuk pengguna keyboard dan screen reader -->
     <a href="#konten-utama" class="skip-link">Loncat ke konten utama</a>
 
-    <!-- 1. Header & Navigasi Semantik -->
+    <!-- bagian header dan navigasi utama halaman -->
     <header class="site-header" id="beranda">
         <div class="header-container">
             <a href="#beranda" class="brand-logo" aria-label="Beranda Portofolio Griselda Hutahaean">
@@ -42,9 +42,9 @@
         </div>
     </header>
 
-    <!-- 2. Konten Utama Dokumen -->
+    <!-- bagian utama yang menampung seluruh isi halaman -->
     <main id="konten-utama">
-        <!-- Hero Section: Presentasi Profil Eksekutif -->
+        <!-- bagian pembuka untuk mengenalkan profil secara singkat -->
         <section class="hero-section" aria-labelledby="hero-heading">
             <div class="hero-container">
                 <div class="hero-content">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
 
-                <!-- Aside Semantik: Snapshot Profil Cepat -->
+                <!-- aside berisi ringkasan profil dan kontak cepat -->
                 <aside class="profile-aside" aria-labelledby="aside-heading">
                     <div class="aside-card">
                         <div class="aside-card-top">
@@ -106,7 +106,7 @@
 
                         <hr class="aside-divider">
 
-                        <!-- HTML Description List (<dl>) untuk Informasi Ringkas -->
+                        <!-- description list untuk menyusun informasi ringkas -->
                         <dl class="aside-meta-list">
                             <div class="meta-item">
                                 <dt>Institusi</dt>
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <!-- Section 1 Semantik: Tentang Saya -->
+        <!-- section tentang profil, visi, dan komitmen -->
         <section class="section-block" id="tentang" aria-labelledby="tentang-heading">
             <div class="block-container">
                 <header class="section-header">
@@ -190,7 +190,7 @@
             </div>
         </section>
 
-        <!-- Section 2 Semantik: Galeri Keahlian Terstruktur -->
+        <!-- section yang menampilkan daftar keahlian -->
         <section class="section-block section-alt" id="keahlian" aria-labelledby="keahlian-heading">
             <div class="block-container">
                 <header class="section-header">
@@ -200,7 +200,7 @@
                 </header>
 
                 <div class="skills-showcase-grid">
-                    <!-- Domain 1: Bahasa Pemrograman -->
+                    <!-- kelompok keahlian bahasa pemrograman -->
                     <article class="skill-group-card">
                         <div class="skill-header">
                             <span class="skill-domain-badge">Core Languages</span>
@@ -216,7 +216,7 @@
                         </ul>
                     </article>
 
-                    <!-- Domain 2: Data Analytics & AI -->
+                    <!-- kelompok keahlian analisis data dan ai -->
                     <article class="skill-group-card">
                         <div class="skill-header">
                             <span class="skill-domain-badge">Analytics &amp; AI</span>
@@ -232,7 +232,7 @@
                         </ul>
                     </article>
 
-                    <!-- Domain 3: Basis Data & Arsitektur -->
+                    <!-- kelompok keahlian basis data dan arsitektur -->
                     <article class="skill-group-card">
                         <div class="skill-header">
                             <span class="skill-domain-badge">Data Systems</span>
@@ -248,7 +248,7 @@
                         </ul>
                     </article>
 
-                    <!-- Domain 4: Web UI & Alat Kolaborasi -->
+                    <!-- kelompok keahlian web ui dan alat kolaborasi -->
                     <article class="skill-group-card">
                         <div class="skill-header">
                             <span class="skill-domain-badge">Interface &amp; Tools</span>
@@ -267,7 +267,7 @@
             </div>
         </section>
 
-        <!-- Section 3 Semantik: Portofolio Karya, Tabel Data Semantik, dan Metodologi -->
+        <!-- section portofolio, tabel capaian, dan metodologi proyek -->
         <section class="section-block" id="portofolio" aria-labelledby="portofolio-heading">
             <div class="block-container">
                 <header class="section-header">
@@ -276,7 +276,7 @@
                     <p class="section-subtitle">Kumpulan karya terpilih mencakup rekayasa perangkat lunak, studi kasus data, dan kompetisi inovasi.</p>
                 </header>
 
-                <!-- Grid Kartu Proyek Unggulan -->
+                <!-- grid untuk menampilkan beberapa proyek utama -->
                 <div class="projects-card-grid">
                     <article class="project-spotlight-card">
                         <div class="project-card-header">
@@ -375,7 +375,7 @@
                     </article>
                 </div>
 
-                <!-- 2. Tabel Semantik Lengkap (Wajib: caption, thead, tbody, tfoot, scope) -->
+                <!-- tabel semantik untuk merangkum capaian proyek -->
                 <div class="table-card-container">
                     <div class="table-header-intro">
                         <h3 class="table-title">Tabel Rekapitulasi Capaian Portofolio &amp; Riset</h3>
@@ -453,7 +453,7 @@
                     </div>
                 </div>
 
-                <!-- 3. Daftar Berurutan (<ol>): Metodologi Siklus Proyek -->
+                <!-- daftar berurutan yang menjelaskan tahapan proyek -->
                 <div class="methodology-card" id="metodologi">
                     <div class="methodology-header">
                         <span class="section-tag">Standar Rekayasa</span>
@@ -497,7 +497,7 @@
             </div>
         </section>
 
-        <!-- Section 4 Semantik: Formulir Pemesanan Layanan Konsultasi & Kontak Resmi -->
+        <!-- section formulir konsultasi dan kontak resmi -->
         <section class="section-block section-alt" id="layanan" aria-labelledby="layanan-heading">
             <div class="block-container">
                 <header class="section-header">
@@ -508,7 +508,7 @@
 
                 <div class="form-wrapper-card">
                     <form class="consultation-form" action="https://httpbin.org/post" method="POST" novalidate>
-                        <!-- Blok Fieldset 1: Identitas & Kontak Pemohon -->
+                        <!-- fieldset pertama untuk identitas dan kontak pemohon -->
                         <fieldset class="form-fieldset">
                             <legend class="form-legend">
                                 <span class="legend-badge">Blok 01</span>
@@ -516,7 +516,7 @@
                             </legend>
 
                             <div class="form-row-2col">
-                                <!-- Kontrol Input 1: text -->
+                                <!-- input untuk nama lengkap -->
                                 <div class="form-group">
                                     <label for="input-nama" class="field-label">
                                         Nama Lengkap <span class="req-star" aria-hidden="true">*</span>
@@ -525,7 +525,7 @@
                                     <span id="nama-help" class="field-hint">Gunakan nama lengkap resmi untuk memudahkan pendataan.</span>
                                 </div>
 
-                                <!-- Kontrol Input 2: email -->
+                                <!-- input untuk alamat email -->
                                 <div class="form-group">
                                     <label for="input-email" class="field-label">
                                         Alamat Email Resmi <span class="req-star" aria-hidden="true">*</span>
@@ -536,7 +536,7 @@
                             </div>
 
                             <div class="form-row-2col">
-                                <!-- Kontrol Input 3: tel -->
+                                <!-- input untuk nomor telepon atau whatsapp -->
                                 <div class="form-group">
                                     <label for="input-telepon" class="field-label">
                                         Nomor Telepon / WhatsApp <span class="req-star" aria-hidden="true">*</span>
@@ -545,7 +545,7 @@
                                     <span id="telepon-help" class="field-hint">Format nomor telepon Indonesia yang aktif (9-16 digit angka).</span>
                                 </div>
 
-                                <!-- Kontrol Input 4: Institusi / Asal Organisasi (text) -->
+                                <!-- input untuk asal institusi atau organisasi -->
                                 <div class="form-group">
                                     <label for="input-institusi" class="field-label">
                                         Asal Institusi / Organisasi
@@ -556,7 +556,7 @@
                             </div>
                         </fieldset>
 
-                        <!-- Blok Fieldset 2: Kebutuhan Layanan & Rincian Konsultasi -->
+                        <!-- fieldset kedua untuk kebutuhan layanan dan konsultasi -->
                         <fieldset class="form-fieldset">
                             <legend class="form-legend">
                                 <span class="legend-badge">Blok 02</span>
@@ -564,7 +564,7 @@
                             </legend>
 
                             <div class="form-row-2col">
-                                <!-- Kontrol Input 5: select -->
+                                <!-- pilihan topik layanan menggunakan select -->
                                 <div class="form-group">
                                     <label for="select-topik" class="field-label">
                                         Pilihan Topik Peminatan / Layanan <span class="req-star" aria-hidden="true">*</span>
@@ -580,7 +580,7 @@
                                     <span id="topik-help" class="field-hint">Pilih bidang topik yang paling relevan dengan kebutuhan Anda.</span>
                                 </div>
 
-                                <!-- Kontrol Input 6: date -->
+                                <!-- input untuk memilih tanggal konsultasi -->
                                 <div class="form-group">
                                     <label for="input-tanggal" class="field-label">
                                         Perkiraan Tanggal Konsultasi <span class="req-star" aria-hidden="true">*</span>
@@ -591,7 +591,7 @@
                             </div>
 
                             <div class="form-row-2col">
-                                <!-- Kontrol Input 7: number -->
+                                <!-- input untuk menentukan durasi konsultasi -->
                                 <div class="form-group">
                                     <label for="input-durasi" class="field-label">
                                         Estimasi Durasi Diskusi (Jam) <span class="req-star" aria-hidden="true">*</span>
@@ -600,7 +600,7 @@
                                     <span id="durasi-help" class="field-hint">Durasi pertemuan antara 1 hingga 8 jam per sesi.</span>
                                 </div>
 
-                                <!-- Kontrol Input 8: radio (Moda Diskusi) -->
+                                <!-- pilihan moda diskusi menggunakan radio button -->
                                 <div class="form-group">
                                     <fieldset class="sub-fieldset">
                                         <legend class="sub-legend">Preferensi Moda Diskusi <span class="req-star" aria-hidden="true">*</span></legend>
@@ -618,7 +618,7 @@
                                 </div>
                             </div>
 
-                            <!-- Kontrol Input 9: textarea -->
+                            <!-- textarea untuk menjelaskan kebutuhan proyek -->
                             <div class="form-group">
                                 <label for="textarea-pesan" class="field-label">
                                     Deskripsi Kebutuhan / Pertanyaan Proyek <span class="req-star" aria-hidden="true">*</span>
@@ -627,7 +627,7 @@
                                 <span id="pesan-help" class="field-hint">Tuliskan deskripsi secara detail dan jelas untuk mempercepat proses peninjauan materi.</span>
                             </div>
 
-                            <!-- Kontrol Input 10: checkbox (Persetujuan) -->
+                            <!-- checkbox untuk persetujuan penggunaan data -->
                             <div class="form-group consent-group">
                                 <div class="choice-item choice-checkbox">
                                     <input type="checkbox" id="checkbox-persetujuan" name="persetujuan" class="custom-checkbox" required aria-describedby="persetujuan-help">
@@ -639,7 +639,7 @@
                             </div>
                         </fieldset>
 
-                        <!-- Tombol Submit & Aksi Form -->
+                        <!-- tombol untuk mengirim formulir konsultasi -->
                         <div class="form-submit-row">
                             <button type="submit" class="btn btn-submit">
                                 <span class="btn-text">Kirim Formulir Permintaan Konsultasi</span>
@@ -656,7 +656,7 @@
         </section>
     </main>
 
-    <!-- 3. Footer Semantik -->
+    <!-- footer berisi identitas, navigasi, dan tautan resmi -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-primary-block">
