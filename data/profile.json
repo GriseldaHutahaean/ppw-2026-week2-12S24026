@@ -1,0 +1,66 @@
+{
+  "name": "Griselda Tabitha Nathania Hutahaean",
+  "nim": "12S24026",
+  "title": "S1 Sistem Informasi & Institusi Teknologi Del",
+  "bio": "Mahasiswa Sistem Informasi yang memiliki fokus pada analisis data, perancangan sistem, dan antarmuka pengguna yang bersifat terstruktur, inklusif, dan efisien.",
+  "location": "Sitoluama, Laguboti, Sumatera Utara",
+  "institution": "Institut Teknologi Del",
+  "faculty": "FITE (S1 Sistem Informasi)",
+  "researchFocus": "Data Analytics & System Design",
+  "email": "griseldatabita@gmail.com",
+  "phone": "+62 859-4311-3515",
+  "github": "https://github.com/GriseldaHutahaean",
+  "linkedin": "https://www.linkedin.com/in/GriseldaHutahaean",
+  "stats": [
+    { "value": "3.41", "label": "IPK" },
+    { "value": "05+", "label": "Proyek Terverifikasi" },
+    { "value": "100%", "label": "Aksesibilitas" }
+  ],
+  "skills": [
+    {
+      "domain": "Core Languages",
+      "title": "Programming Languages",
+      "description": "Bahasa pemrograman yang digunakan dalam pemodelan algoritma, backend logika sistem, dan komputasi.",
+      "items": ["Python", "Java (OOP)", "SQL (ANSI)", "C Programming", "R Language"]
+    },
+    {
+      "domain": "Analytics & AI",
+      "title": "Data Science & Pipeline",
+      "description": "Manipulasi data tabular, pemodelan statistik, eksplorasi data, dan dashboard analitis.",
+      "items": ["Pandas", "NumPy", "Matplotlib & Seaborn", "Power BI", "Statistical Modeling"]
+    },
+    {
+      "domain": "Data Systems",
+      "title": "Database & Architecture",
+      "description": "Perancangan relasional basis data, normalisasi (1NF-3NF), transaksi ACID, dan konektor data.",
+      "items": ["MySQL RDBMS", "JDBC Connectivity", "CRUD Operations", "Database Schema Design", "Query Optimization"]
+    },
+    {
+      "domain": "Interface & Tools",
+      "title": "Web Design & DevOps Tools",
+      "description": "Pondasi antarmuka semantik, desain responsif, prototipe antarmuka, dan manajemen versi Git.",
+      "items": ["HTML5 Semantic", "Modern CSS3 (Flex & Grid)", "Figma UI/UX Prototyping", "Git & GitHub Versioning", "VS Code Workspace"]
+    }
+  ],
+  "about": {
+    "lead": "Sebagai mahasiswa Sistem Informasi di Institut Teknologi Del, saya menaruh antusiasme mendalam pada integrasi antara analisis data bisnis, rekayasa perangkat lunak, dan pengalaman pengguna (UX) yang inklusif.",
+    "paragraphs": [
+      "Saya memandang teknologi bukan semata sebagai barisan kode, melainkan medium pemecahan masalah nyata. Setiap tantangan komputasi saya dekati melalui riset kebutuhan terstruktur, perancangan model basis data yang efisien, serta penerapan prinsip-prinsip desain modular.",
+      "Selain aspek teknis, saya aktif membina kemampuan kolaborasi lintas fungsi melalui kepanitiaan akademik, peran kepemimpinan tim kompetisi nasional, dan program edukasi teknologi."
+    ],
+    "pillars": [
+      {
+        "title": "Pemikiran Analitis & Berbasis Data",
+        "description": "Menganalisis pola data mentah menjadi wawasan terukur dengan memanfaatkan Python, SQL, dan visualisasi interaktif."
+      },
+      {
+        "title": "Arsitektur Bersih & Terstruktur",
+        "description": "Menulis kode yang mudah dirawat dengan mematuhi prinsip OOP, SOLID, dan standar semantik industri."
+      },
+      {
+        "title": "Aksesibilitas & Inklusivitas (A11y)",
+        "description": "Memastikan setiap antarmuka digital dapat diakses secara merata oleh semua orang mengacu pada pedoman."
+      }
+    ]
+  }
+}

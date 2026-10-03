@@ -1,0 +1,67 @@
+[
+  {
+    "id": "rpg-character-management-system",
+    "title": "RPG Character Management System",
+    "description": "Aplikasi desktop berbasis Java yang mengimplementasikan konsep Object-Oriented Programming, prinsip SOLID, konektivitas JDBC ke MySQL, serta operasi CRUD relasional yang modular dan teruji.",
+    "category": "Software Engineering",
+    "tags": ["Java", "JDBC", "MySQL", "OOP SOLID"],
+    "metrics": {
+      "year": "2026",
+      "status": "Selesai",
+      "role": "Lead Backend Developer"
+    },
+    "link": "#"
+  },
+  {
+    "id": "gemastik-smart-city-solution",
+    "title": "GEMASTIK Smart City Solution",
+    "description": "Memimpin tim perancang sistem solusi digital pintar terpadu untuk monitoring layanan publik perkotaan. Mengembangkan dokumen spesifikasi sistem, alur pengguna, dan mockup interaktif tingkat tinggi.",
+    "category": "Kompetisi Nasional",
+    "tags": ["Figma", "System Architecture", "User Research", "Leadership"],
+    "metrics": {
+      "year": "2025",
+      "status": "Selesai",
+      "role": "Team Leader & Architect"
+    },
+    "link": "#"
+  },
+  {
+    "id": "data-engineer-sql-challenge",
+    "title": "Data Engineer & SQL Challenge",
+    "description": "Menyelesaikan tantangan pengolahan dataset skala besar ritel menggunakan query analitis tingkat lanjut dengan dukungan skrip Python untuk data cleansing otomatis.",
+    "category": "Data Engineering",
+    "tags": ["SQL Advanced", "Python", "Pandas", "Data Cleaning"],
+    "metrics": {
+      "year": "2025",
+      "status": "Selesai",
+      "role": "Participant Analyst"
+    },
+    "link": "#"
+  },
+  {
+    "id": "national-uiux-design-competition",
+    "title": "National UI/UX Inclusivity Design",
+    "description": "Merancang aplikasi edukasi berbasis ponsel pintar yang ramah penyandang disabilitas sensorik dengan penerapan rasio kontras warna ketat, pembaca suara, dan navigasi gerak intuitif.",
+    "category": "UI/UX Design",
+    "tags": ["UI/UX", "Figma", "WCAG 2.2", "Prototyping"],
+    "metrics": {
+      "year": "2026",
+      "status": "Selesai",
+      "role": "Finalist & Lead Designer"
+    },
+    "link": "#"
+  },
+  {
+    "id": "web-portfolio-interactive-services",
+    "title": "Web Portfolio & Interactive Services",
+    "description": "Membangun halaman portofolio personal dengan arsitektur modular, data provider JSON, rendering dinamis, serta pengalaman layanan interaktif yang responsif dan aksesibel.",
+    "category": "Web Frontend & A11y",
+    "tags": ["HTML5", "CSS3", "JavaScript", "Accessibility"],
+    "metrics": {
+      "year": "2026",
+      "status": "Aktif",
+      "role": "Full-Stack Author"
+    },
+    "link": "#"
+  }
+]

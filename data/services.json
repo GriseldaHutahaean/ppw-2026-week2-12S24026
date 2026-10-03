@@ -1,0 +1,38 @@
+[
+  {
+    "id": "data-analytics-audit",
+    "name": "Data Analytics & SQL Audit",
+    "description": "Audit kebutuhan data, merancang query analitis, dan membantu proses pengambilan keputusan berbasis data.",
+    "features": [
+      "Analisis kebutuhan data bisnis",
+      "Struktur query SQL yang rapi dan terukur",
+      " Optimasi dashboard dan visualisasi insight"
+    ],
+    "price": "Rp 450.000 / sesi",
+    "category": "Data Analytics"
+  },
+  {
+    "id": "system-design-consulting",
+    "name": "System Design Consulting",
+    "description": "Konsultasi model bisnis dan skema sistem untuk kebutuhan aplikasi, workflow, serta integrasi data.",
+    "features": [
+      "Analisis kebutuhan sistem",
+      "Perancangan alur kerja dan skema data",
+      "Dokumentasi spesifikasi solusi"
+    ],
+    "price": "Rp 650.000 / sesi",
+    "category": "System Design"
+  },
+  {
+    "id": "uiux-accessibility-review",
+    "name": "UI/UX & Accessibility Review",
+    "description": "Review usability, prototipe antarmuka, serta evaluasi aksesibilitas untuk memastikan pengalaman yang inklusif.",
+    "features": [
+      "Audit pengalaman pengguna",
+      "Evaluasi kepatuhan aksesibilitas",
+      "Rekomendasi perbaikan antarmuka"
+    ],
+    "price": "Rp 550.000 / sesi",
+    "category": "UX Design"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "ppw-2026-week2-12s24026",
+  "version": "1.0.0",
+  "description": "**Mata Kuliah:** 12S3101 - Pemrograman dan Pengujian Aplikasi Web (Minggu 02)  \r **Program Studi:** S1 Sistem Informasi, Fakultas Informatika dan Teknik Elektro  \r **Institusi:** Institut Teknologi Del, Sitoluama, Laguboti, Sumatera Utara",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GriseldaHutahaean/ppw-2026-week2-12S24026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GriseldaHutahaean/ppw-2026-week2-12S24026/issues"
+  },
+  "homepage": "https://github.com/GriseldaHutahaean/ppw-2026-week2-12S24026#readme",
+  "dependencies": {
+    "playwright": "^1.63.0"
+  }
+}
