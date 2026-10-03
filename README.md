@@ -1,5 +1,5 @@
-# Single Page Showcase Portfolio & Layanan Interaktif Accessible
-**Mata Kuliah:** 12S3101 - Pemrograman dan Pengujian Aplikasi Web (Minggu 02)  
+# Portofolio Dinamis & Layanan Interaktif
+**Mata Kuliah:** 12S3101 - Pemrograman dan Pengujian Aplikasi Web (Minggu 04)  
 **Program Studi:** S1 Sistem Informasi, Fakultas Informatika dan Teknik Elektro  
 **Institusi:** Institut Teknologi Del, Sitoluama, Laguboti, Sumatera Utara  
 
@@ -14,19 +14,30 @@
 | **Program Studi** | S1 Sistem Informasi |
 | **Kelas / Angkatan** | SI 2024 |
 | **Repositori GitHub** | [ppw-2026-week2-12S24026](https://github.com/GriseldaHutahaean/ppw-2026-week2-12S24026) |
-| **Live GitHub Pages** | [https://GriseldaHutahaean.github.io/ppw-2026-week2-12S24026/](https://GriseldaHutahaean.github.io/ppw-2026-week2-12S24026/) |
+| **URL GitHub Pages** | [https://GriseldaHutahaean.github.io/ppw-2026-week2-12S24026/](https://GriseldaHutahaean.github.io/ppw-2026-week2-12S24026/) (status deployment belum diverifikasi) |
 
 ---
 
 ## 📌 Ringkasan Proyek
 
-Halaman web portofolio profil profesional tunggal (*Single Page Showcase Webpage*) ini dirancang untuk menampilkan profil akademik, portofolio karya, galeri keahlian terstruktur, serta formulir pemesanan layanan konsultasi proyek yang sepenuhnya **estetik, rapi, responsif, dan accessible (WCAG 2.2 Level AA)**.
+Portofolio satu halaman ini menampilkan profil akademik, karya, keahlian, dan layanan konsultasi. Proyek mempertahankan identitas visual portofolio sebelumnya, sekaligus mengubah konten utama menjadi aplikasi sisi-klien yang mengambil data dari berkas JSON dan merendernya secara dinamis.
 
-Desain mengusung konsep **Coastal Midnight Luxe (Deep Oceanic Midnight & Bioluminescent Cyan)** yang bebas dari tata letak generik contoh praktikum dasar, memadukan kenyamanan visual (*visual appeal*), hierarki tipografi modern (*Plus Jakarta Sans*), foto resmi mahasiswa dengan jas almamater Institut Teknologi Del, dan keterbacaan tinggi berstandar WCAG 2.2 AA.
+Desain memakai tema **Coastal Midnight Luxe** dan tipografi Plus Jakarta Sans. Foto profil dipakai pada kartu profil; kartu proyek tidak menggunakan gambar.
+
+## Arsitektur
+
+| Tier | Berkas | Tanggung jawab |
+| :--- | :--- | :--- |
+| Presentasi | `index.html`, `style.css`, `css/custom-style.css` | Struktur halaman, gaya, keadaan UI, dan responsivitas. |
+| Aplikasi | `js/app.js` | Mengambil state, merender konten, menangani filter, modal, formulir, dan notifikasi pesanan. |
+| Data | `data/profile.json`, `data/projects.json`, `data/services.json` | Sumber data profil, proyek, dan layanan. |
+| Data access | `js/api-service.js` | Mengambil JSON melalui Fetch API dan memproses simulasi submit secara asynchronous. |
+
+`app.js` memuat data JSON dengan `async/await` dan `Promise.all`. Halaman perlu dijalankan melalui HTTP lokal atau hosting statis agar permintaan `fetch()` ke berkas JSON dapat berfungsi.
 
 ---
 
-## 🏆 Kepatuhan Spesifikasi Teknis & Rubrik Penilaian (100%)
+## Fitur dan Spesifikasi
 
 ### 1. Struktur Semantik HTML5 (Bobot 20%)
 * ✅ **`<header>`**: Berisi identitas monogram merek `GH.` dan navigasi situs yang sticky dengan efek *frosted glass backdrop-blur*.
@@ -74,32 +85,67 @@ Desain mengusung konsep **Coastal Midnight Luxe (Deep Oceanic Midnight & Biolumi
   * Dapat dinavigasikan sepenuhnya menggunakan papan ketik (*keyboard accessible*).
 
 ### 4. Estetika & Tata Letak Modern CSS (Bobot 25%)
-* ✅ **Eksternal CSS**: Seluruh aturan gaya dikelola terpusat pada berkas `style.css`.
+* ✅ **CSS modular**: Gaya dasar dan tata letak berada di `style.css`; gaya komponen dinamis berada di `css/custom-style.css`.
 * ✅ **Universal Box Sizing Reset**: `*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }`.
 * ✅ **Penerapan Rumus Harmonisasi Warna 60-30-10 (Coastal Midnight Luxe)**:
   * **60% Dominan**: Latar belakang deep oceanic midnight (`#0a111e`) dan coastal midnight slate (`#101c2e`) dengan aksen *radial bioluminescent cyan & seafoam glow*.
-  * **30% Struktural & Kontras**: Tipografi moonlit white dan silver (`#f1f5f9`, `#cbd5e1`) dengan batas marine transparan (`rgba(56, 189, 248, 0.14)`) berstandar WCAG AA tinggi (rasio > 10:1).
+  * **30% Struktural & Kontras**: Tipografi moonlit white dan silver (`#f1f5f9`, `#cbd5e1`) dengan batas marine transparan (`rgba(56, 189, 248, 0.14)`).
   * **10% Aksen Gradasi Coastal Midnight**: Gradasi biru samudra, cyan elektrik, dan seafoam teal (`linear-gradient(135deg, #0284c7, #0ea5e9, #06b6d4, #14b8a6)`) pada tombol aksi, header tabel, badge, avatar ring, dan nomor langkah metodologi.
 * ✅ **Tipografi & Tampilan Visual**: Font *Plus Jakarta Sans* & *JetBrains Mono*, sudut membulat halus (`border-radius: 8px - 24px`), bayangan lembut bernuansa coastal glow (*diffused soft shadow*), serta transisi interaktif bebas getaran.
-* ✅ **Tata Letak Flexbox & CSS Grid**: Pengorganisasian komponen hero dua kolom, kartu snapshot profil dengan foto almamater Del, grid kartu keahlian, grid proyek, dan formulir.
+* ✅ **Tata Letak Flexbox & CSS Grid**: Pengorganisasian komponen hero dua kolom, kartu profil dengan foto, grid kartu keahlian, grid proyek tanpa gambar, dan formulir.
 * ✅ **Desain Responsif Media Queries**: Menggunakan breakpoint `@media (max-width: 992px)`, `@media (max-width: 768px)`, dan `@media (max-width: 480px)`.
 * ✅ **Preferensi Gerak Aksesibel**: `@media (prefers-reduced-motion: reduce)` untuk kenyamanan pengguna sensitif animasi.
 
-### 5. Pengelolaan Git & GitHub Pages (Bobot 20%)
-* ✅ Repositori Git lokal terstruktur rapi.
-* ✅ Berkas `README.md` informatif, komprehensif, dan terdokumentasi lengkap.
-* ✅ Siap dipublikasikan ke GitHub Pages melalui branch `main`.
+### 5. Alur Pemesanan dan Notifikasi
+* Tombol **Pilih layanan** memilih topik terkait, menggulir langsung ke formulir, dan memfokuskan kolom nama.
+* Formulir diproses secara asynchronous. Pesan sukses atau gagal ditampilkan di dekat formulir setelah submit; tidak ada notifikasi yang muncul otomatis saat halaman dibuka.
+* Setelah submit berhasil, pesanan ditambahkan ke badge lonceng. Lonceng membuka daftar pesanan terbaru dan detail seluruh field formulir.
+* Pesanan disimpan pada `localStorage` dengan key `portfolio_service_orders`, sehingga tetap tersedia setelah reload di browser yang sama.
+* **Batas penyimpanan:** `localStorage` hanya tersedia pada browser/perangkat tersebut. Implementasi ini tidak mengirim pesanan ke server atau menyinkronkannya untuk pengunjung lain. Data formulir contoh atau sensitif sebaiknya tidak dimasukkan ke situs publik tanpa backend yang sesuai.
+
+### 6. Pengelolaan dan Deployment
+* Repositori menggunakan berkas HTML, CSS, JavaScript ES modules, dan JSON statis.
+* GitHub Pages dapat digunakan untuk hosting statis, tetapi status deployment URL pada tabel identitas belum diverifikasi dalam dokumentasi ini.
 
 ---
 
-## 📂 Struktur Berkas Proyek
+## Struktur Berkas Proyek
 
 ```text
-ppw-2026-week2-12S24026/
-├── index.html       # Struktur semantik dokumen HTML5
-├── style.css        # Tata letak, tipografi, tema Coastal Midnight, & media queries responsif
-├── profile.jpg      # Foto profil resmi mahasiswa berjas almamater Institut Teknologi Del
-└── README.md        # Dokumentasi lengkap, identitas mahasiswa, dan panduan proyek
+.
+├── index.html
+├── style.css
+├── css/
+│   └── custom-style.css
+├── data/
+│   ├── profile.json
+│   ├── projects.json
+│   └── services.json
+├── js/
+│   ├── api-service.js
+│   └── app.js
+├── profile.jpg
+├── verify.js
+├── package.json
+├── package-lock.json
+└── README.md
 ```
 
----
+## Menjalankan Lokal
+
+Jalankan perintah dari direktori proyek:
+
+```powershell
+python -m http.server 8000
+```
+
+Buka `http://localhost:8000/`. Jangan membuka `index.html` langsung melalui `file://`, karena browser dapat memblokir Fetch API untuk berkas JSON.
+
+Skrip verifikasi browser menggunakan Playwright dan mengharapkan server lokal aktif pada port 8000:
+
+```powershell
+npm install
+node verify.js
+```
+
+Skrip tersebut memeriksa data JSON, jumlah proyek/layanan, waktu pemuatan, dan error browser. Pengukuran performa yang lebih rinci dapat dilakukan melalui tab **Network** dan **Performance** di DevTools; README ini tidak menyertakan hasil benchmark yang belum diukur.
