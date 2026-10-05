@@ -131,6 +131,12 @@ Desain memakai tema **Coastal Midnight Luxe** dan tipografi Plus Jakarta Sans. F
 └── README.md
 ```
 
+Bukti performa
+cold
+![alt text](image.png)
+warm
+![alt text](image-1.png)
+
 ## Menjalankan Lokal
 
 Jalankan perintah dari direktori proyek:
