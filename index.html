@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap 5.3 sebagai fondasi komponen dan grid responsif -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
     <!-- menghubungkan file css eksternal -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,8 +34,11 @@
                 <span class="logo-text">Griselda Hutahaean<span class="logo-dot">.</span></span>
             </a>
 
-            <nav class="main-nav" aria-label="Navigasi Utama Situs">
-                <ul class="nav-list">
+            <nav class="main-nav navbar navbar-expand-lg" aria-label="Navigasi Utama Situs">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavigation" aria-controls="portfolioNavigation" aria-expanded="false" aria-label="Buka menu navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="nav-list collapse navbar-collapse" id="portfolioNavigation">
                     <li><a href="#tentang" class="nav-link">Tentang</a></li>
                     <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
                     <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
@@ -277,8 +284,8 @@
                 </header>
 
                 <!-- grid untuk menampilkan beberapa proyek utama -->
-                <div class="projects-card-grid">
-                    <article class="project-spotlight-card">
+                <div class="projects-card-grid row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                    <article class="project-spotlight-card card h-100">
                         <div class="project-card-header">
                             <span class="project-year-badge">2026 &bull; Proyek Akademik</span>
                             <span class="project-category-tag">Software Engineering</span>
@@ -300,9 +307,10 @@
                             <span class="tech-chip">MySQL</span>
                             <span class="tech-chip">OOP SOLID</span>
                         </div>
+                        <button type="button" class="btn btn-outline-info project-detail-btn" data-bs-toggle="modal" data-bs-target="#projectModalRpg"><i class="bi bi-arrow-up-right-circle me-2" aria-hidden="true"></i>Lihat Detail</button>
                     </article>
 
-                    <article class="project-spotlight-card">
+                    <article class="project-spotlight-card card h-100">
                         <div class="project-card-header">
                             <span class="project-year-badge">2025 &bull; Tim Leader</span>
                             <span class="project-category-tag">Kompetisi Nasional</span>
@@ -324,9 +332,10 @@
                             <span class="tech-chip">User Research</span>
                             <span class="tech-chip">Leadership</span>
                         </div>
+                        <button type="button" class="btn btn-outline-info project-detail-btn" data-bs-toggle="modal" data-bs-target="#projectModalGemastik"><i class="bi bi-arrow-up-right-circle me-2" aria-hidden="true"></i>Lihat Detail</button>
                     </article>
 
-                    <article class="project-spotlight-card">
+                    <article class="project-spotlight-card card h-100">
                         <div class="project-card-header">
                             <span class="project-year-badge">2025 &bull; Industri DQLab</span>
                             <span class="project-category-tag">Data Engineering</span>
@@ -348,9 +357,10 @@
                             <span class="tech-chip">Pandas</span>
                             <span class="tech-chip">Data Cleaning</span>
                         </div>
+                        <button type="button" class="btn btn-outline-info project-detail-btn" data-bs-toggle="modal" data-bs-target="#projectModalData"><i class="bi bi-arrow-up-right-circle me-2" aria-hidden="true"></i>Lihat Detail</button>
                     </article>
 
-                    <article class="project-spotlight-card">
+                    <article class="project-spotlight-card card h-100">
                         <div class="project-card-header">
                             <span class="project-year-badge">2026 &bull; Finalis Nasional</span>
                             <span class="project-category-tag">UI/UX Design</span>
@@ -372,6 +382,7 @@
                             <span class="tech-chip">WCAG 2.2</span>
                             <span class="tech-chip">Prototyping</span>
                         </div>
+                        <button type="button" class="btn btn-outline-info project-detail-btn" data-bs-toggle="modal" data-bs-target="#projectModalUx"><i class="bi bi-arrow-up-right-circle me-2" aria-hidden="true"></i>Lihat Detail</button>
                     </article>
                 </div>
 
@@ -517,20 +528,16 @@
 
                             <div class="form-row-2col">
                                 <!-- input untuk nama lengkap -->
-                                <div class="form-group">
-                                    <label for="input-nama" class="field-label">
-                                        Nama Lengkap <span class="req-star" aria-hidden="true">*</span>
-                                    </label>
-                                    <input type="text" id="input-nama" name="nama" class="form-input" required placeholder="Contoh: Griselda Hutahaean" autocomplete="name" aria-describedby="nama-help">
+                                <div class="form-group form-floating">
+                                    <input type="text" id="input-nama" name="nama" class="form-input form-control" required placeholder="Nama Lengkap" autocomplete="name" aria-describedby="nama-help">
+                                    <label for="input-nama" class="field-label">Nama Lengkap <span class="req-star" aria-hidden="true">*</span></label>
                                     <span id="nama-help" class="field-hint">Gunakan nama lengkap resmi untuk memudahkan pendataan.</span>
                                 </div>
 
                                 <!-- input untuk alamat email -->
-                                <div class="form-group">
-                                    <label for="input-email" class="field-label">
-                                        Alamat Email Resmi <span class="req-star" aria-hidden="true">*</span>
-                                    </label>
-                                    <input type="email" id="input-email" name="email" class="form-input" required placeholder="nama@del.ac.id atau nama@domain.com" autocomplete="email" aria-describedby="email-help">
+                                <div class="form-group form-floating">
+                                    <input type="email" id="input-email" name="email" class="form-input form-control" required placeholder="Alamat Email Resmi" autocomplete="email" aria-describedby="email-help">
+                                    <label for="input-email" class="field-label">Alamat Email Resmi <span class="req-star" aria-hidden="true">*</span></label>
                                     <span id="email-help" class="field-hint">Surat balasan dan ringkasan konsultasi akan dikirim ke email ini.</span>
                                 </div>
                             </div>
@@ -541,7 +548,7 @@
                                     <label for="input-telepon" class="field-label">
                                         Nomor Telepon / WhatsApp <span class="req-star" aria-hidden="true">*</span>
                                     </label>
-                                    <input type="tel" id="input-telepon" name="telepon" class="form-input" required placeholder="Contoh: 085943113515" autocomplete="tel" pattern="[0-9+-\s]{9,16}" aria-describedby="telepon-help">
+                                    <input type="tel" id="input-telepon" name="telepon" class="form-input form-control" required placeholder="Contoh: 085943113515" autocomplete="tel" pattern="[0-9+-\s]{9,16}" aria-describedby="telepon-help">
                                     <span id="telepon-help" class="field-hint">Format nomor telepon Indonesia yang aktif (9-16 digit angka).</span>
                                 </div>
 
@@ -550,7 +557,7 @@
                                     <label for="input-institusi" class="field-label">
                                         Asal Institusi / Organisasi
                                     </label>
-                                    <input type="text" id="input-institusi" name="institusi" class="form-input" placeholder="Contoh: Institut Teknologi Del / Perusahaan" aria-describedby="institusi-help">
+                                    <input type="text" id="input-institusi" name="institusi" class="form-input form-control" placeholder="Contoh: Institut Teknologi Del / Perusahaan" aria-describedby="institusi-help">
                                     <span id="institusi-help" class="field-hint">Nama kampus, instansi pemerintah, atau korporasi (opsional).</span>
                                 </div>
                             </div>
@@ -585,7 +592,7 @@
                                     <label for="input-tanggal" class="field-label">
                                         Perkiraan Tanggal Konsultasi <span class="req-star" aria-hidden="true">*</span>
                                     </label>
-                                    <input type="date" id="input-tanggal" name="tanggal" class="form-input" required aria-describedby="tanggal-help">
+                                    <input type="date" id="input-tanggal" name="tanggal" class="form-input form-control" required aria-describedby="tanggal-help">
                                     <span id="tanggal-help" class="field-hint">Pilih tanggal rencana sesi konsultasi dilakukan.</span>
                                 </div>
                             </div>
@@ -596,7 +603,7 @@
                                     <label for="input-durasi" class="field-label">
                                         Estimasi Durasi Diskusi (Jam) <span class="req-star" aria-hidden="true">*</span>
                                     </label>
-                                    <input type="number" id="input-durasi" name="durasi" class="form-input" min="1" max="8" value="2" required aria-describedby="durasi-help">
+                                    <input type="number" id="input-durasi" name="durasi" class="form-input form-control" min="1" max="8" value="2" required aria-describedby="durasi-help">
                                     <span id="durasi-help" class="field-hint">Durasi pertemuan antara 1 hingga 8 jam per sesi.</span>
                                 </div>
 
@@ -619,11 +626,9 @@
                             </div>
 
                             <!-- textarea untuk menjelaskan kebutuhan proyek -->
-                            <div class="form-group">
-                                <label for="textarea-pesan" class="field-label">
-                                    Deskripsi Kebutuhan / Pertanyaan Proyek <span class="req-star" aria-hidden="true">*</span>
-                                </label>
-                                <textarea id="textarea-pesan" name="pesan" rows="5" class="form-input form-textarea" required placeholder="Jelaskan gambaran umum permasalahan proyek, ekspektasi luaran yang diharapkan, serta konteks yang perlu dipersiapkan..." aria-describedby="pesan-help"></textarea>
+                            <div class="form-group form-floating">
+                                <textarea id="textarea-pesan" name="pesan" rows="5" class="form-input form-control form-textarea" required placeholder="Deskripsi kebutuhan proyek" aria-describedby="pesan-help"></textarea>
+                                <label for="textarea-pesan" class="field-label">Deskripsi Kebutuhan / Pertanyaan Proyek <span class="req-star" aria-hidden="true">*</span></label>
                                 <span id="pesan-help" class="field-hint">Tuliskan deskripsi secara detail dan jelas untuk mempercepat proses peninjauan materi.</span>
                             </div>
 
@@ -655,6 +660,20 @@
             </div>
         </section>
     </main>
+
+    <!-- detail proyek menggunakan Bootstrap Modal -->
+    <div class="modal fade" id="projectModalRpg" tabindex="-1" aria-labelledby="projectModalRpgLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="projectModalRpgLabel">RPG Character Management System</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button></div><div class="modal-body">Sistem desktop Java dengan arsitektur MVC, JDBC, MySQL, dan validasi transaksi untuk mengelola karakter, inventaris, serta status permainan secara modular.</div><div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup Detail</button></div></div></div>
+    </div>
+    <div class="modal fade" id="projectModalGemastik" tabindex="-1" aria-labelledby="projectModalGemastikLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="projectModalGemastikLabel">GEMASTIK Smart City Solution</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button></div><div class="modal-body">Solusi layanan publik pintar yang dirancang melalui user journey, mockup Figma, usability testing, dan pemetaan arsitektur cloud serta IoT.</div><div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup Detail</button></div></div></div>
+    </div>
+    <div class="modal fade" id="projectModalData" tabindex="-1" aria-labelledby="projectModalDataLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="projectModalDataLabel">Data Engineer &amp; SQL Challenge</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button></div><div class="modal-body">Eksplorasi data ritel menggunakan CTE, window function, multi-table join, serta Python dan Pandas untuk cleansing dan visualisasi tren penjualan.</div><div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup Detail</button></div></div></div>
+    </div>
+    <div class="modal fade" id="projectModalUx" tabindex="-1" aria-labelledby="projectModalUxLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="projectModalUxLabel">National UI/UX Inclusivity Design</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button></div><div class="modal-body">Desain aplikasi edukasi inklusif dengan kontras teruji, dukungan pembaca suara, navigasi intuitif, dan validasi SUS Score 88.5.</div><div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup Detail</button></div></div></div>
+    </div>
 
     <!-- footer berisi identitas, navigasi, dan tautan resmi -->
     <footer class="site-footer">
@@ -714,6 +733,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
